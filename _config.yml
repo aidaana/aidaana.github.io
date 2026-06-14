@@ -1,6 +1,6 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "My blog"
+title: "Aidaana Khasanova"
+author: "Aidaana Khasanova"
+description: "Personal website featuring my research, projects, blog posts, all around economics."
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -9,7 +9,7 @@ date_format: "%B %d, %Y"
 # Layout
 
 show_excerpts: true             # show article excerpts instead of archive list on the home page
-show_frame: true                # display a grey frame on large screens
+show_frame: false                # display a grey frame on large screens
 show_sidebar: false             # show a sidebar instead of the usual header
 show_minimal: false             # remove all clutter
 
@@ -22,9 +22,9 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md", sidebaricon: address-card}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
-  - {title: Mail, icon: envelope, url: "mailto:author@example.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Mail, icon: envelope, url: "mailto:aidaana.khasanova@gmail.com"}
+  - {title: Github, icon: github, url: "https://github.com/aidaana"}
+  - {title: LinkedIn, icon: linkedin, url: "www.linkedin.com/in/aidaana-khasanova-b4147b190"}
 
 comments:
 #  disqus_shortname: ""         # see https://disqus.com
