@@ -21,22 +21,22 @@ In this blog, I plan to share my personal relfections, economics-related notes, 
 
 ## Education
 
-**Ph.D. in Theoretical & Computational Chemistry**
+**Graduate School of Economics**
 {: style="margin-bottom: 0.25em;"}
-Yale University
+Waseda University
 {: style="color: #666; margin-bottom: 0.5em;"}
-Aug 2023 - May 2026
+Apr 2026 - present
 {: style="text-align: right; color: #999; margin-top: -1.5em;"}
-Advisor: Prof. Victor S. Batista. Defended March 2026.
+Non-degree student.
 {: style="color: #888; font-size: 0.95em;"}
 
-**S.B. in Chemistry and Biology, Minor in Computer Science**
+**B.A. in Applied Mathematics and Informatics**
 {: style="margin-bottom: 0.25em;"}
-Massachusetts Institute of Technology
+American University of Central Asia
 {: style="color: #666; margin-bottom: 0.5em;"}
-Sep 2018 - May 2023
+Sep 2020 - June 2024
 {: style="text-align: right; color: #999; margin-top: -1.5em;"}
-GPA: 5.0/5.0. Phi Beta Kappa.
+GPA: 3.95/4.00.
 {: style="color: #888; font-size: 0.95em;"}
 
 ## Projects
