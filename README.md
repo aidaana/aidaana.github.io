@@ -20,15 +20,15 @@ In this blog, I plan to share my personal relfections, economics-related notes, 
 </div>
 
 ## Education
+<div style="margin-bottom: 1em;">
+  <div style="display: flex; justify-content: space-between; align-items: baseline;">
+    <strong>Graduate School of Economics</strong>
+    <span style="color: #666;">Apr 2026 – present</span>
+  </div>
 
-**Graduate School of Economics**
-{: style="margin-bottom: 0.2em;"}
-Waseda University
-{: style="color: #666; margin-bottom: 0.15em;"}
-Apr 2026 - present
-{: style="text-align: right; color: #666; margin-top: -0.5em;"}
-Non-degree student.
-{: style="color: #666; font-size: 0.95em;"}
+  <div style="color: #666;">Waseda University</div>
+  <div style="color: #666; font-size: 0.95em;">Non-degree student.</div>
+</div>
 
 **B.A. in Applied Mathematics and Informatics**
 {: style="margin-bottom: 0.2em;"}
