@@ -24,7 +24,7 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:aidaana.khasanova@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/aidaana"}
-  - {title: LinkedIn, icon: linkedin, url: "www.linkedin.com/in/aidaana-khasanova-b4147b190"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/aidaana-khasanova-b4147b190"}
 
 comments:
 #  disqus_shortname: ""         # see https://disqus.com
