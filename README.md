@@ -1,14 +1,18 @@
 ---
-title: "About"
+title: "Aidaana Khasanova"
 permalink: "/about/"
 layout: page
 ---
 
-## Github Pages
+I'm currently studying economics at the Graduate School of Economics, Waseda University, Tokyo.
 
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) to `your_username.github.io` and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+I received my B.A. in Applied Mathematics and Informatics from the American University of Central Asia, Bishkek, Kyrgyztsan. Currently, I am studying as a non-degree student at Waseda while preparing for admission to a Master's program, studying basics of economics and independently developing programming skills for research.
 
-## Features
+My research interests lie in macroeconomics, monetary policy, financial systems, and international macroeconomics.
+
+This blog, where I plan to share my personal relfections, economics-related notes, and coding projects,  serves as a record of my learning journey.
+
+## Education
 
  - dark mode
  - [KaTeX](https://katex.org) included
