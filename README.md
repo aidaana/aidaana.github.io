@@ -19,6 +19,8 @@ In this blog, I plan to share my personal relfections, economics-related notes, 
   <a href="[...](https://www.linkedin.com/in/aidaana-khasanova-b4147b190)" style="color: black;"><i class="fab fa-linkedin"></i></a>
 </div>
 
+<hr style="border: 0; height: 1px; background: #e0e0e0; margin: 2em 0 1em 0;">
+
 ## Education
 <div style="margin-bottom: 1em;">
   <div style="display: flex; justify-content: space-between; align-items: baseline;">
@@ -40,6 +42,10 @@ In this blog, I plan to share my personal relfections, economics-related notes, 
   <div style="color: #666; font-size: 0.95em;">GPA: 3.95/4.00</div>
 </div>
 
+<hr style="border: 0; height: 1px; background: #e0e0e0; margin: 2em 0 1em 0;">
+
 ## Projects
+
+<hr style="border: 0; height: 1px; background: #e0e0e0; margin: 2em 0 1em 0;">
 
 ## Interests
