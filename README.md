@@ -3,7 +3,8 @@ title: "About"
 permalink: "/about/"
 layout: page
 ---
-## {.large-heading} Aidaana Khasanova
+## Aidaana Khasanova
+{: .large-heading}
 I'm currently studying economics at the Graduate School of Economics, Waseda University, Tokyo.
 
 I received my B.A. in Applied Mathematics and Informatics from the American University of Central Asia, Bishkek, Kyrgyztsan. Currently, I am studying as a non-degree student at Waseda while preparing for admission to a Master's program, studying basics of economics and independently developing programming skills for research.
