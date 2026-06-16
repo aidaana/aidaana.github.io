@@ -14,9 +14,9 @@ My research interests lie in macroeconomics, monetary policy, financial systems,
 In this blog, I plan to share my personal relfections, economics-related notes, and coding projects.
 
 <div style="margin-top: 1em; font-size: 1.3em;">
-  <a href="mailto:aidaana.khasanova@gmail.com" style="margin-right: 1.5em;"><i class="fas fa-envelope"></i></a>
-  <a href="https://github.com/aidaana" style="margin-right: 1.5em;"><i class="fab fa-github"></i></a>
-  <a href="https://www.linkedin.com/in/aidaana-khasanova-b4147b190"><i class="fab fa-linkedin"></i></a>
+  <a href="mailto:aidaana.khasanova@gmail.com" style="color: black; margin-right: 1.5em;"><i class="fas fa-envelope"></i></a>
+  <a href="[...](https://github.com/aidaana)" style="color: black; margin-right: 1.5em;"><i class="fab fa-github"></i></a>
+  <a href="[...](https://www.linkedin.com/in/aidaana-khasanova-b4147b190)" style="color: black;"><i class="fab fa-linkedin"></i></a>
 </div>
 
 ## Education
