@@ -7,7 +7,7 @@ layout: page
 {: .large-heading}
 I'm currently studying economics at the Graduate School of Economics, Waseda University, Tokyo.
 
-I received my B.A. in Applied Mathematics and Informatics from the American University of Central Asia, Bishkek, Kyrgyztsan. Currently, I am studying as a non-degree student at Waseda while preparing for admission to a Master's program and studying basics of economics and independently developing programming skills for research.
+I received my B.A. in Applied Mathematics and Informatics from the American University of Central Asia, Bishkek, Kyrgyztsan. Currently, I am studying as a non-degree student at Waseda while preparing [...]
 
 My research interests lie in macroeconomics, monetary policy, financial systems, and international macroeconomics.
 
@@ -21,13 +21,23 @@ In this blog, I plan to share my personal relfections, economics-related notes, 
 
 ## Education
 
- - dark mode
- - [KaTeX](https://katex.org) included
- - no external ressources
- - optional sidebar
- - archive page
- - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+**Ph.D. in Theoretical & Computational Chemistry**
+{: style="margin-bottom: 0.25em;"}
+Yale University
+{: style="color: #666; margin-bottom: 0.5em;"}
+Aug 2023 - May 2026
+{: style="text-align: right; color: #999; margin-top: -1.5em;"}
+Advisor: Prof. Victor S. Batista. Defended March 2026.
+{: style="color: #888; font-size: 0.95em;"}
+
+**S.B. in Chemistry and Biology, Minor in Computer Science**
+{: style="margin-bottom: 0.25em;"}
+Massachusetts Institute of Technology
+{: style="color: #666; margin-bottom: 0.5em;"}
+Sep 2018 - May 2023
+{: style="text-align: right; color: #999; margin-top: -1.5em;"}
+GPA: 5.0/5.0. Phi Beta Kappa.
+{: style="color: #888; font-size: 0.95em;"}
 
 ## Projects
 
