@@ -7,11 +7,15 @@ layout: page
 {: .large-heading}
 I'm currently studying economics at the Graduate School of Economics, Waseda University, Tokyo.
 
-I received my B.A. in Applied Mathematics and Informatics from the American University of Central Asia, Bishkek, Kyrgyztsan. Currently, I am studying as a non-degree student at Waseda while preparing for admission to a Master's program, studying basics of economics and independently developing programming skills for research.
+I received my B.A. in Applied Mathematics and Informatics from the American University of Central Asia, Bishkek, Kyrgyztsan. Currently, I am studying as a non-degree student at Waseda while preparing [...]
 
 My research interests lie in macroeconomics, monetary policy, financial systems, and international macroeconomics.
 
 This blog, where I plan to share my personal relfections, economics-related notes, and coding projects,  serves as a record of my learning journey.
+
+<a href="mailto:aidaana.khasanova@gmail.com"><i class="fas fa-envelope"></i></a>
+<a href="https://github.com/aidaana"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/aidaana-khasanova-b4147b190"><i class="fab fa-linkedin"></i></a>
 
 ## Education
 
@@ -75,7 +79,7 @@ plugins:
 
 ## Math
 
-Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter. [Jektex](https://github.com/yagarea/jektex) can be used to pre-render math on the server side.
+Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter. [...]
 
 ## License
 
