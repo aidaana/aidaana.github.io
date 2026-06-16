@@ -26,18 +26,18 @@ In this blog, I plan to share my personal relfections, economics-related notes, 
 Waseda University
 {: style="color: #666; margin-bottom: 0.15em;"}
 Apr 2026 - present
-{: style="text-align: right; color: #999; margin-top: -1.5em;"}
+{: style="text-align: right; color: #666; margin-top: -1.5em;"}
 Non-degree student.
-{: style="color: #888; font-size: 0.95em;"}
+{: style="color: #666; font-size: 0.95em;"}
 
 **B.A. in Applied Mathematics and Informatics**
 {: style="margin-bottom: 0.5em;"}
 American University of Central Asia
 {: style="color: #666; margin-bottom: 0.15em;"}
 Sep 2020 - June 2024
-{: style="text-align: right; color: #999; margin-top: -1.5em;"}
+{: style="text-align: right; color: #666; margin-top: -1.5em;"}
 GPA: 3.95/4.00.
-{: style="color: #888; font-size: 0.95em;"}
+{: style="color: #666; font-size: 0.95em;"}
 
 ## Projects
 
