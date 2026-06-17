@@ -5,7 +5,7 @@ layout: page
 ---
 ## Aidaana Khasanova
 {: .large-heading}
-I am currently a non-degree student at the Graduate School of Economics, Waseda University, where I am preparing for formal admission to the Master’s program while studying basics of economics and independently learning to code for research.
+I am currently a non-degree student at the Graduate School of Economics, Waseda University, where I am preparing for formal admission to the Master’s program while studying basics of economics and learning to code for research in my free time.
 
 My research interests lie in monetary policy, financial systems, and international macroeconomics.
 
@@ -45,6 +45,8 @@ In this blog, I plan to share my personal reflections, economics-related notes, 
 <hr style="border: 0; height: 1px; background: #e0e0e0; margin: 2em 0 1em 0;">
 
 ## Projects
+
+Coming soon...
 
 <hr style="border: 0; height: 1px; background: #e0e0e0; margin: 2em 0 1em 0;">
 
