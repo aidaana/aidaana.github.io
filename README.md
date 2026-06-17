@@ -51,8 +51,8 @@ Coming soon...
 <hr style="border: 0; height: 1px; background: #e0e0e0; margin: 2em 0 1em 0;">
 
 ## Interests
-* Reading newspapers and long-form journalism (love The New York Times, The Economist, Financial Times)
+* Reading newspapers and long-form journalism (I love The New York Times, The Economist, Financial Times!)
 * Nonfiction books on economics, society, and business; memoirs, biographies, children's literature, and epistolary novels
 * Technology, programming, and AI for both research and personal life management
 * Aesthetic pleasure from Renaissance, Romanticism, and Impressionism art, book illustrations, Japanese cinema
-* Exploring Tokyo's coffee shops, bakeries, and traditional cuisine
+* Exploring Tokyo's coffeeshops, bookstores, bakeries, breakfast spots
