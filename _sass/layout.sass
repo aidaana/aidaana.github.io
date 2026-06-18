@@ -9,9 +9,16 @@ body
 body > header, body > footer
   display: flex
   flex-wrap: wrap
-  justify-content: space-between
+  justify-content: flex-start
   align-items: center
   row-gap: 0
+
+body > header
+  display: flex
+  align-items: center
+
+body > header nav
+  margin-left: auto
 
 header a, footer a
   display: inline-block
