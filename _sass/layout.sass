@@ -20,7 +20,9 @@ body > header
   position: sticky
   top: 0
   z-index: 100
-  background-color: white
+  background-color: rgba(255, 255, 255, 0.7)  // white, 70% opaque
+  backdrop-filter: blur(12px)
+  -webkit-backdrop-filter: blur(12px)  // Safari support
 
 header a, footer a
   display: inline-block
