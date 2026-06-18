@@ -9,6 +9,7 @@ title: "Home"
       {% include meta.html post=post %}
       {{ post.excerpt }}
       <footer><a href="{{ post.url | relative_url }}">Read more</a></footer>
+      <footer><a class="read-more" href="{{ post.url | relative_url }}">Read more</a></footer>
     </article>
   {% endfor %}
 {% else %}
