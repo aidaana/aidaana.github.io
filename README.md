@@ -5,7 +5,7 @@ layout: page
 ---
 ## Aidaana Khasanova
 {: .large-heading}
-I am currently a non-degree student at the Graduate School of Economics, Waseda University, where I am preparing for formal admission to the Master’s program while studying basics of economics and learning to code for research in my free time.
+I am currently a non-degree student at the Graduate School of Economics, Waseda University, Tokyo. I am preparing for formal admission to the Master’s program while studying basics of economics and learning to code for research in my free time.
 
 My research interests lie in monetary policy, financial systems, and international macroeconomics.
 
@@ -51,8 +51,8 @@ Coming soon...
 <hr style="border: 0; height: 1px; background: #e0e0e0; margin: 2em 0 1em 0;">
 
 ## Interests
-* Reading newspapers and long-form journalism (I love The New York Times, The Economist, Financial Times!)
+* Newspapers and long-form journalism (I love The New York Times, The Economist, Financial Times!)
 * Nonfiction books on economics, society, and business; memoirs, biographies, children's literature, and epistolary novels
-* Technology, programming, and AI for both research and personal life management
-* Aesthetic pleasure from Renaissance, Romanticism, and Impressionism art, book illustrations, Japanese cinema
+* Technology, programming, and AI for both research and knowledge management
+* Art: from Renaissance to Romanticism and Impressionism to book illustrations and movies
 * Exploring Tokyo's coffeeshops, bookstores, bakeries, breakfast spots
