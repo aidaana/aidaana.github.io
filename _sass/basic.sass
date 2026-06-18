@@ -18,6 +18,8 @@ a
     color: inherit
   nav &:not(:hover)
     color:  gray(100)
+  nav:has(svg) &:not(:hover)
+    color: inherit
   article &:hover
     text-decoration-color: transparent 
   body > header &:hover, body > footer &:hover
