@@ -14,8 +14,10 @@ a
   text-decoration-color: transparent
   header &, footer &, nav &
     font-weight: bold
-  header &, footer &, nav &:not(:hover)
+  header &, footer &:not(:hover)
     color: inherit
+  nav &:not(:hover)
+    color:  gray(100)
   article &:hover
     text-decoration-color: transparent 
   body > header &:hover, body > footer &:hover
