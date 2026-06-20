@@ -34,3 +34,11 @@ comments:
 
 plugins:
  - jekyll-feed
+
+ collections:
+  notes:
+    output: true
+    permalink: /notes/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
