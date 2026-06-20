@@ -18,6 +18,8 @@ a
     color: inherit
   nav &:not(:hover)
     color:  gray(100)
+  nav div &:not(:hover)
+    color: inherit
   nav:has(svg) &:not(:hover)
     color: inherit
   article &:hover
@@ -91,7 +93,7 @@ code:not(pre code)
   opacity: .75
 
 header time, nav time
-  color: #000000
+  color: gray(100)
 
 body > header h1
   font-size: 1rem
