@@ -34,8 +34,8 @@ comments:
 
 plugins:
  - jekyll-feed
-
- collections:
+ 
+collections:
   notes:
     output: true
     permalink: /notes/:name/
