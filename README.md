@@ -51,8 +51,8 @@ Coming soon...
 <hr style="border: 0; height: 1px; background: #e0e0e0; margin: 2em 0 1em 0;">
 
 ## Interests
-* Newspapers and long-form journalism (I love The New York Times, The Economist, Financial Times!)
-* Nonfiction books on economics, society, and business; memoirs, biographies, children's literature, and epistolary novels
-* Technology, programming, and AI for both research and knowledge management
-* Art: from Renaissance to Romanticism and Impressionism to book illustrations and movies
-* Exploring Tokyo's coffeeshops, bookstores, bakeries, breakfast spots
+**Newspapers and long-form journalism** (I love The New York Times, The Economist, Financial Times!)
+**Books.** Nonfiction books on economics, society, and business; memoirs, biographies, children's literature, and epistolary novels
+**Technology.** Coding and and AI for both research and everyday life
+**Art**: from Renaissance to Romanticism and Impressionism to book illustrations and movies
+Exploring Tokyo's coffeeshops, bookstores, bakeries, breakfast spots
