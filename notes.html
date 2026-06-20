@@ -5,9 +5,38 @@ layout: default
 
 <main>
   <header><h1>{{ include.title | default: page.title }}</h1></header>
-  <nav class="smooth">
+  <nav class="notes-categories smooth">
+    <a href="#" class="active" data-category="all">All</a>
+    <a href="#" data-category="personal">Personal</a>
+    <a href="#" data-category="reviews">Reviews</a>
+    <a href="#" data-category="economics">Economics</a>
+    <a href="#" data-category="projects">Projects</a>
+    <a href="#" data-category="bookmarks">Bookmarks</a>
+  </nav>
+
+  <nav class="notes-list smooth">
     {% for post in site.notes %}
-    <div><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+    <div data-category="{{ post.category | downcase }}">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </div>
     {% endfor %}
   </nav>
 </main>
+
+<script>
+  const tabs = document.querySelectorAll('.notes-categories a');
+  const posts = document.querySelectorAll('.notes-list div');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', e => {
+      e.preventDefault();
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const cat = tab.dataset.category;
+      posts.forEach(post => {
+        post.style.display = (cat === 'all' || post.dataset.category === cat) ? '' : 'none';
+      });
+    });
+  });
+</script>
