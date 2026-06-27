@@ -19,10 +19,13 @@ layout: default
     <div data-category="{{ post.category | downcase }}">
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if post.subtitle %}<p class="subtitle">{{ post.subtitle }}</p>{% endif %}
     </div>
     {% endfor %}
   </nav>
 </main>
+
+
 
 <script>
   const tabs = document.querySelectorAll('.notes-categories a');
