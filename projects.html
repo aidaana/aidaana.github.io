@@ -16,7 +16,10 @@ layout: default
     {% for post in site.projects %}
     <div data-category="{{ post.category | downcase }}">
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <div class="post-title-group">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% if post.subtitle %}<p class="subtitle">{{ post.subtitle }}</p>{% endif %}
+      </div>
     </div>
     {% endfor %}
   </nav>
@@ -24,7 +27,7 @@ layout: default
 
 <script>
   const tabs = document.querySelectorAll('.projects-categories a');
-  const posts = document.querySelectorAll('.projects-list div');
+  const posts = document.querySelectorAll('.projects-list > div');
 
   tabs.forEach(tab => {
     tab.addEventListener('click', e => {
