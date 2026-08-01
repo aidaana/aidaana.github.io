@@ -92,10 +92,10 @@ $$
 \tag{5}
 $$
 
-Under quadratic utility, the random-walk result (4) implies $\small \mathrm{E}_t C_s = C\_t$ 
-for all $\small s > t$. Substituting $C_t$ for $\mathrm{E}_t C_s$ inside the sum on the 
+Under quadratic utility, the random-walk result (4) implies $\small \mathrm{E}\_t C\_s = C\_t$ 
+for all $\small s > t$. Substituting $C\_t$ for $\mathrm{E}\_t C\_s$ inside the sum on the 
 left-hand side of (5) and using the geometric-sum formula 
-$\small \sum_{s=t}^{\infty}(1/(1+r))^{s-t} = (1+r)/r$, yields the 
+$\small \sum\_{s=t}^{\infty}(1/(1+r))^{s-t} = (1+r)/r$, yields the 
 certainty-equivalence consumption function (eq. 32 in the original), which is 
 the expected-value version of the permanent-income consumption function 
 (eq. 10 in the original):
