@@ -29,7 +29,7 @@ MathJax = {
 - [4. Conclusion](#4-conclusion)
 - [References](#references)
 - [Data Sources](#data-sources)
-
+- 
 ### 1. Introduction
 
 This report examines the empirical validity of the stochastic intertemporal current 
@@ -60,7 +60,7 @@ CA_t = B_{t+1} - B_t = (Y_t - \tilde{Y}_t) - (I_t - \tilde{I}_t) - (G_t - \tilde
 \tag{1}
 $$
 
-where the tilde (\(\small \tilde{X}_t\)) denotes the permanent value of a variable, based on 
+where the tilde ($\small \tilde{X}_t$) denotes the permanent value of a variable, based on 
 the present discounted value of its future path (eq. 17 in the original):
 
 $$
@@ -81,7 +81,7 @@ u'(C_t) = (1+r)\beta \, \mathrm{E}_t\{u'(C_{t+1})\}
 \tag{3}
 $$
 
-Assuming a quadratic utility function (eq. 30 in the original), \(\small u(C) = C - \frac{a_0}{2}C^2\), and imposing \(\small \beta(1+r) = 1\), the Euler equation (3) reduces to (eq. 31 in the 
+Assuming a quadratic utility function (eq. 30 in the original), $\small u(C) = C - \frac{a_0}{2}C^2$, and imposing $\small \beta(1+r) = 1$, the Euler equation (3) reduces to (eq. 31 in the 
 original):
 
 $$
@@ -101,10 +101,10 @@ $$
 \tag{5}
 $$
 
-Under quadratic utility, the random-walk result (4) implies \(\small \mathrm{E}_t C_s = C_t\) 
-for all $\small s > t$. Substituting \(C_t\) for \(\mathrm{E}_t C_s\) inside the sum on the 
+Under quadratic utility, the random-walk result (4) implies $\small \mathrm{E}_t C_s = C_t$ 
+for all $\small s > t$. Substituting $C_t$ for $\mathrm{E}_t C_s$ inside the sum on the 
 left-hand side of (5) and using the geometric-sum formula 
-\(\small \sum_{s=t}^{\infty}(1/(1+r))^{s-t} = (1+r)/r\), yields the 
+$\small \sum_{s=t}^{\infty}(1/(1+r))^{s-t} = (1+r)/r$, yields the 
 certainty-equivalence consumption function (eq. 32 in the original), which is 
 the expected-value version of the permanent-income consumption function 
 (eq. 10 in the original):
@@ -132,7 +132,7 @@ C_t = rB_t + \mathrm{E}_t \tilde{Y}_t - \mathrm{E}_t \tilde{I}_t - \mathrm{E}_t 
 $$
 
 Finally, substituting the certainty-equivalence consumption function (8) into the 
-definition of the current account, \(\small CA_t = rB_t + (Y_t - I_t - G_t - C_t)\), 
+definition of the current account, $\small CA_t = rB_t + (Y_t - I_t - G_t - C_t)$, 
 gives an equation parallel to the deterministic identity (1), with the 
 present discounted sums replaced by their expected values. This is the 
 stochastic current account identity (eq. 42 in the original), the first key result in this paper:
@@ -145,7 +145,7 @@ $$
 
 Next, we'll derive the Campbell (1987) representation (eq. 43 in the original) in order to derive testable prediction equations.
 
-Defining net output \(\small Z_t$ as $\small Z_t \equiv Y_t - G_t - I_t\) and substituting it into the stochastic current account identity (9) leads to a compact form:
+Defining net output $\small Z_t$ as $\small Z_t \equiv Y_t - G_t - I_t$ and substituting it into the stochastic current account identity (9) leads to a compact form:
 
 $$
 \small
@@ -161,10 +161,10 @@ $$
 \tag{11}
 $$
 
-It is convenient to introduce the lag operator $\small L$, defined by \(\small L^k Z_t \equiv Z_{t-k}\), 
-so that the lead operator is \(\small L^{-k} Z_t \equiv Z_{t+k}\).
+It is convenient to introduce the lag operator $\small L$, defined by $\small L^k Z_t \equiv Z_{t-k}$, 
+so that the lead operator is $ \small L^{-k} Z_t \equiv Z_{t+k}$.
 
-Relabeling index and using \(\small L^{-1}\), the forecast sum (11) can be written compactly as a geometric series in the lead operator:
+Relabeling index and using $\small L^{-1}$, the forecast sum (11) can be written compactly as a geometric series in the lead operator:
 $$
 \small
 \begin{aligned}
@@ -182,7 +182,7 @@ $$
 CA_t = Z_t - \frac{r}{1+r}\left(1 - \frac{L^{-1}}{1+r}\right)^{-1} Z_t.
 $$
 
-Premultiplying both sides by \(\small \left(1 - \frac{L^{-1}}{1+r}\right)\) removes the 
+Premultiplying both sides by $\small \left(1 - \frac{L^{-1}}{1+r}\right)$ removes the 
 inverse operator on the right-hand side:
 
 $$
@@ -194,8 +194,8 @@ $$
 \end{aligned}
 $$
 
-where \(\small \Delta Z_{t+1} \equiv Z_{t+1} - Z_t\). <br>
-Inverting the lag-operator expression back onto \(\small CA_t\) and expanding the operator as a geometric series gives:
+where $\small \Delta Z_{t+1} \equiv Z_{t+1} - Z_t$. <br>
+Inverting the lag-operator expression back onto $\small CA_t$ and expanding the operator as a geometric series gives:
 
 $$
 \small
@@ -227,12 +227,12 @@ which is the Campbell (1987) representation of the current account (eq. 43 in th
 #### 2.2 VAR(1)-based predicted current account
 
 Since (12) shows that the current account depends on expected future net output 
-changes, the model requires a way to forecast \(\small \Delta Z_s\). 
+changes, the model requires a way to forecast $\small \Delta Z_s$. 
 Following Campbell (1987), Obstfeld and Rogoff assume that consumers form 
-forecasts of future net output changes, \(\small \Delta Z_s\) for $s > t$, using not only 
+forecasts of future net output changes, $\small \Delta Z_s$ for $s > t$, using not only 
 the univariate history of $\small \Delta Z$ but also the history of the current account 
-itself. This additional information is incorporated by modeling \(\small \Delta Z_t\) and 
-\(\small CA_t\) as a first-order vector autoregression (VAR), expressed as 
+itself. This additional information is incorporated by modeling $\small \Delta Z_t$ and 
+$\small CA_t$ as a first-order vector autoregression (VAR), expressed as 
 deviations from their unconditional means:
 
 $$
@@ -244,8 +244,8 @@ $$
 \tag{13}
 $$
 
-where \(\epsilon_1\) and \(\epsilon_2\) are shocks with conditional mean zero. Defining 
-\(\small \Psi \equiv \begin{bmatrix} \psi_{11} & \psi_{12} \\ \psi_{21} & \psi_{22} \end{bmatrix}\), 
+where $\epsilon_1$ and $\epsilon_2$ are shocks with conditional mean zero. Defining 
+$\small \Psi \equiv \begin{bmatrix} \psi_{11} & \psi_{12} \\ \psi_{21} & \psi_{22} \end{bmatrix}$, 
 the $s$-period-ahead forecast implied by (13) is obtained by iterating the VAR 
 forward:
 
@@ -255,7 +255,7 @@ $$
 = \Psi^{s-t} \begin{bmatrix} \Delta Z_t \\ CA_t \end{bmatrix}.
 $$
 
-Premultiplying by the row vector \(\small \begin{bmatrix} 1 & 0 \end{bmatrix}\) isolates \(\small \Delta Z_s\):
+Premultiplying by the row vector $\small \begin{bmatrix} 1 & 0 \end{bmatrix}$ isolates $\small \Delta Z_s$:
 
 $$
 \small
@@ -264,7 +264,7 @@ $$
 \tag{14}
 $$
 
-Substituting (14) into the Campbell representation (12) of \(\small CA_t\) gives:
+Substituting (14) into the Campbell representation (12) of $\small CA_t$ gives:
 
 $$
 \small
@@ -306,12 +306,12 @@ $$
 \tag{17}
 $$
 
-where \(\small \begin{bmatrix} \Phi_{\Delta Z} & \Phi_{CA} \end{bmatrix}\) collects the entire 
+where $\small \begin{bmatrix} \Phi_{\Delta Z} & \Phi_{CA} \end{bmatrix}$ collects the entire 
 matrix expression into a single row vector of reduced-form coefficients.
 
-Equation (17) expresses the model's predicted current account, \(\small \widehat{CA}_t\), 
-as a function of the currently observable variables \(\small \Delta Z_t$ and $\small CA_t\). It converts the infinite-horizon forecast in eq. (12) into a quantity that can be computed directly from current data, making the model's 
-forward-looking prediction empirically testable. If consumers behave according to the consumption-smoothing hypothesis, the actual current account, \(\small CA_t\), should match the model's prediction, \(\small \widehat{CA}_t\), allowing researchers to test the model by checking if the row vector \(\small \begin{bmatrix} \Phi_{\Delta Z} & \Phi_{CA} \end{bmatrix}\) statistically equals \(\small \begin{bmatrix} 0 & 1 \end{bmatrix}\).
+Equation (17) expresses the model's predicted current account, $\small \widehat{CA}_t$, 
+as a function of the currently observable variables $\small \Delta Z_t$ and $\small CA_t$. It converts the infinite-horizon forecast in eq. (12) into a quantity that can be computed directly from current data, making the model's 
+forward-looking prediction empirically testable. If consumers behave according to the consumption-smoothing hypothesis, the actual current account, $\small CA_t$, should match the model's prediction, $\small \widehat{CA}_t$, allowing researchers to test the model by checking if the row vector $\small \begin{bmatrix} \Phi_{\Delta Z} & \Phi_{CA} \end{bmatrix}$ statistically equals $\small \begin{bmatrix} 0 & 1 \end{bmatrix}$.
 
 ### 3. Empirical analysis
 
@@ -320,7 +320,7 @@ testing them empirically for Russia. This section proceeds in three parts.
 Section 3.1 describes the data used, their sources, and the transformations 
 required for the model. Section 3.2 presents the estimated 
 VAR in net output changes and the current account. Section 3.3 uses these 
-estimates to construct the model-implied predicted current account, \(\widehat{CA}_t\), 
+estimates to construct the model-implied predicted current account, $\widehat{CA}_t$, 
 and formally tests the model using a Wald test.
 
 #### 3.1 Data
