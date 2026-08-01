@@ -6,7 +6,7 @@ category: data-analysis
 ---
 <style>
   html {
-    scroll-padding-top: 120px !important;
+    scroll-padding-top: 140px !important;
     scroll-behavior: smooth; /* Optional: adds a smooth transition effect */
   }
   /* Automatically add an empty line gap below all paragraphs */
