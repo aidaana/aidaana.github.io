@@ -12,11 +12,12 @@ category: data-analysis
   
   /* Automatically add an empty line gap below all markdown tables */
   table { 
-    max-width: 75% !important;           /* Controls the table width (lower = smaller) */
-    margin-left: auto !important;        /* Centers horizontally */
-    margin-right: auto !important;       /* Centers horizontally */
+    display: table !important;           /* Overrides theme structural box locks */
+    max-width: 75% !important;           /* Adjusts target size layout footprint */
+    margin-left: auto !important;        /* Computes centered alignment blocks */
+    margin-right: auto !important;       /* Computes centered alignment blocks */
     margin-bottom: 35px !important;      /* Keeps the empty line gap below the table */
-    font-size: 0.9em !important;         /* Makes text/cells slightly tighter and more compact */
+    font-size: 0.9em !important;
   }
   
   /* Automatically add spacing above and below section headers */
@@ -407,7 +408,7 @@ sample means.
 </div>
 <br>
 
-Table 1. Descriptive statistics for net output, change in net output, and the current account
+<div style="text-align: center;">Table 1. Descriptive statistics for net output, change in net output, and the current account</div> 
 
 | Variable | N | Mean | Std. Dev. | Min | Max |
 | :--- | :---: | :---: | :---: | :---: | :---: |
