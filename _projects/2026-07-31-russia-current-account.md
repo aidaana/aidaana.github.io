@@ -4,6 +4,24 @@ subtitle: "Evidence from Russia, 1995–2025"
 layout: post
 category: data-analysis
 ---
+<style>
+  /* Automatically add an empty line gap below all paragraphs */
+  p { 
+    margin-bottom: 25px !important; 
+  }
+  
+  /* Automatically add an empty line gap below all markdown tables */
+  table { 
+    margin-bottom: 35px !important; 
+  }
+  
+  /* Automatically add spacing above and below section headers */
+  h3, h4, h5 { 
+    margin-top: 40px !important;
+    margin-bottom: 20px !important; 
+  }
+</style>
+
 <script>MathJax = { tex: { tags: 'ams', inlineMath: [['$', '$'], ['\\(', '\\)']] }};</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 #### Table of Contents
