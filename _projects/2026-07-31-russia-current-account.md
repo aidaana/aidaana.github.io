@@ -370,34 +370,35 @@ sample means.
 
 <div align="center">
 <img src="/assets/images/figures/fig_net_output.png" width="700">
-<p>Figure 2. Net output and net output changes (billion RUB, 2021 prices)<p>
+<p>Figure 2. Net output and net output changes (billion RUB, 2021 prices)</p>
 </div>
 <br>
 
 <div align="center">
 <img src="/assets/images/figures/fig_ca.png" width="700">
-<p>Figure 3. Real current account (billion RUB, 2021 prices)<p>
+<p>Figure 3. Real current account (billion RUB, 2021 prices)</p>
 </div>
 <br>
 
 <div align="center">
 <img src="/assets/images/figures/fig_per_capita.png" width="700">
-<p>Figure 4. Per-capita raw vs demeaned net output change and current account <p>
+<p>Figure 4. Per-capita raw vs demeaned net output change and current account </p>
 </div>
 <br>
 
 <div align="center">
 Table 1. Descriptive statistics for net output, change in net output, and the current account
 
-|                                |   N |     Mean |   Std. Dev. |     Min |     Max |
-|:-------------------------------|----:|---------:|------------:|--------:|--------:|
-| Z_t (billion RUB, real, SA)    | 121 | 13724.3  |     5258.75 | 3540.7  | 21423.2 |
-| ΔZ_t (thousand RUB per capita) | 120 |     0.95 |        7.68 |  -17.48 |    23   |
-| CA_t (thousand RUB per capita) | 121 |     9.82 |        6.88 |   -6.92 |    32   |
+| Variable | N | Mean | Std. Dev. | Min | Max |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| $Z_t$ (billion RUB, real, SA) | 121 | 13724.3 | 5258.75 | 3540.7 | 21423.2 |
+| $\Delta Z_t$ (thousand RUB per capita) | 120 | 0.95 | 7.68 | -17.48 | 23 |
+| $CA_t$ (thousand RUB per capita) | 121 | 9.82 | 6.88 | -6.92 | 32 |
 
 </div>
 
 ##### 3.1.1 Stationarity check. The Augmented Dickey-Fuller (ADF) test
+
 Before estimating the VAR, I test $\small \Delta Z_t$ and $CA_t$ for stationarity using 
 the Augmented Dickey-Fuller (ADF) test. The ADF test's null hypothesis is that a 
 series contains a unit root, i.e. the series has no fixed mean to revert to, and the alternative that it 
