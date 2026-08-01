@@ -19,6 +19,11 @@ category: data-analysis
     margin-bottom: 35px !important;      /* Keeps the empty line gap below the table */
     font-size: 0.9em !important;
   }
+
+   /* Unbolds the top row headers */
+  table th {
+    font-weight: normal !important;      /* Changes text from bold to standard weight */
+  }
   
   /* Automatically add spacing above and below section headers */
   h3, h4, h5 { 
@@ -438,7 +443,7 @@ using Python's `statsmodels` package. The resulting coefficient matrix,
 $\small \hat\Psi = \begin{bmatrix}\hat\psi_{11} & \hat\psi_{12}\\ \hat\psi_{21} & 
 \hat\psi_{22}\end{bmatrix}$, is reported in Table 2 below. Descriptive statistics and model fit summary are given in Tables 3 and 4, respectively.
 
-Table 2. Estimated VAR(1) coefficients
+<div style="text-align: center;">Table 2. Estimated VAR(1) coefficients</div>  
 
 |          | $\small \Delta Z\_t $             | $\small CA_t$             |
 | :--- | :---: | :---: |
@@ -454,7 +459,7 @@ N = 119. *** p<0.01, ** p<0.05, * p<0.10. </small>
 </div>
 <br>
 
-Table 3. Descriptive statistics for VAR coefficients
+<div style="text-align: center;">Table 3. Descriptive statistics for VAR coefficients</div>   
 
 | Equation | Regressor | Coefficient | Std. Error | t-stat | p-value |
 | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -463,7 +468,7 @@ Table 3. Descriptive statistics for VAR coefficients
 | $\small CA_t$ | $\Delta Z_{t-1}$ | 0.0445 | 0.0501 | 0.8869 | 0.3751 |
 | $\small CA_t$ | $CA_{t-1}$ | 0.8084 | 0.0550 | 14.6976 | 0.0000 |
 
-Table 4. Model fit summary
+<div style="text-align: center;">Table 4. Model fit summary</div>   
 
 | Variable | $R^2$ | Std. Dev. of Residuals |
 | :--- | ---: | ---: |
@@ -499,7 +504,7 @@ $\hat\Phi\_{CA}$ is estimated at 0.909, which is close to its predicted value of
 has a much larger standard error (0.417), reflecting substantial uncertainty in 
 this estimate.
 
-Table 5. Implied coefficients
+<div style="text-align: center;">Table 5. Implied coefficients</div> 
 
 | Parameter | Estimate | Std. Error | H0 value |
 | :--- | ---: | ---: | ---: |
@@ -552,7 +557,7 @@ $H_0: \Phi_{\Delta Z}=0,\ \Phi_{CA}=1$ using this Wald statistic, with 2 degrees
 of freedom corresponding to the two restrictions being tested jointly. The 
 results are reported in Table 6.
 
-Table 6. Wald test results
+<div style="text-align: center;">Table 6. Wald test results</div>
 
 |  | Statistic | Degrees of Freedom | p-value |
 | :--- | ---: | ---: | ---: |
