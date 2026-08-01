@@ -19,12 +19,6 @@ category: data-analysis
     margin-bottom: 35px !important;      /* Keeps the empty line gap below the table */
     font-size: 0.9em !important;
   }
-
-  /* New rule to perfectly center images and their titles together */
-  .figure-container {
-    text-align: center !important;
-    margin-bottom: 30px !important;
-  }
   
    /* Unbolds the top row headers */
   table th {
@@ -397,25 +391,25 @@ sample means.
 
 <div align="center">
 <img src="/assets/images/figures/fig_real_gdp.png" width="700">
-<p>Figure 1. Real, seasonally adjusted GDP, government spending, and investment (billion RUB, 2021 prices)</p>
+<p style="text-align: center !important;">Figure 1. Real, seasonally adjusted GDP, government spending, and investment (billion RUB, 2021 prices)</p>
 </div>
 <br>
 
 <div align="center">
 <img src="/assets/images/figures/fig_net_output.png" width="700">
-<p>Figure 2. Net output and net output changes (billion RUB, 2021 prices)</p>
+<p style="text-align: center !important;">Figure 2. Net output and net output changes (billion RUB, 2021 prices)</p>
 </div>
 <br>
 
 <div align="center">
 <img src="/assets/images/figures/fig_ca.png" width="700">
-<p>Figure 3. Real current account (billion RUB, 2021 prices)</p>
+<p style="text-align: center !important;">Figure 3. Real current account (billion RUB, 2021 prices)</p>
 </div>
 <br>
 
 <div align="center">
 <img src="/assets/images/figures/fig_per_capita.png" width="700">
-<p>Figure 4. Per-capita raw vs demeaned net output change and current account </p>
+<p style="text-align: center !important;">Figure 4. Per-capita raw vs demeaned net output change and current account </p>
 </div>
 <br>
 
@@ -461,7 +455,7 @@ N = 119. *** p<0.01, ** p<0.05, * p<0.10. </small>
 
 <div align="center">
 <img src="/assets/images/figures/fig_var_fitted.png" width="700">
-<p>Figure 5. Actual vs VAR(1)-fitted net output change and current account </p>
+<p style="text-align: center !important;">Figure 5. Actual vs VAR(1)-fitted net output change and current account </p>
 </div>
 <br>
 
@@ -519,7 +513,7 @@ this estimate.
 
 <div align="center">
 <img src="/assets/images/figures/fig_final.png" width="700">
-<p> Figure 6. Actual and model-predicted current account </p>
+<p style="text-align: center !important;"> Figure 6. Actual and model-predicted current account </p>
 </div>
 
 Figure 6 shows that the model-predicted current account tracks the actual series 
