@@ -5,6 +5,10 @@ layout: post
 category: data-analysis
 ---
 <style>
+  html {
+    scroll-padding-top: 90px !important;
+    scroll-behavior: smooth; /* Optional: adds a smooth transition effect */
+  }
   /* Automatically add an empty line gap below all paragraphs */
   p { 
     margin-bottom: 25px !important; 
@@ -37,17 +41,17 @@ category: data-analysis
 #### Table of Contents
 
 - [1. Introduction](#1-introduction)
-- [2. Theoretical Framework](#2-theoretical-framework)
-  - [2.1 Present Value Model of the Current Account](#21-present-value-model-of-the-current-account)
-  - [2.2 VAR-Based Predicted Current Account](#22-var1-based-predicted-current-account)
-- [3. Empirical Analysis](#3-empirical-analysis)
+- [2. Theoretical framework](#2-theoretical-framework)
+  - [2.1 Present value model of the current account](#21-present-value-model-of-the-current-account)
+  - [2.2 VAR(1)-based predicted current account](#22-var1-based-predicted-current-account)
+- [3. Empirical analysis](#3-empirical-analysis)
   - [3.1 Data](#31-data)
-  - [3.2 VAR Estimation](#32-var-estimation)
-  - [3.3 Predicted Current Account](#33-predicted-current-account)
-  - [3.4 Wald Test](#34-wald-test)
+  - [3.2 VAR estimation](#32-var-estimation)
+  - [3.3 Predicted current account](#33-predicted-current-account)
+  - [3.4 Wald test](#34-wald-test)
 - [4. Conclusion](#4-conclusion)
 - [References](#references)
-- [Data Sources](#data-sources)
+- [Data sources](#data-sources)
 
 ### 1. Introduction
 
