@@ -417,17 +417,15 @@ $\small \hat\Psi = \begin{bmatrix}\hat\psi_{11} & \hat\psi_{12}\\ \hat\psi_{21} 
 \hat\psi_{22}\end{bmatrix}$, is reported in Table 2 below. Descriptive statistics and model fit summary are given in Tables 3 and 4, respectively.
 
 
-<div align="center">
 Table 2. Estimated VAR(1) coefficients
 
 |          | ΔZ_t             | CA_t             |
-|:---------|:-----------------|:-----------------|
-| ΔZ_{t-1} | -0.197** (0.090) | 0.044 (0.050)    |
-| CA_{t-1} | -0.228** (0.099) | 0.808*** (0.055) |
+| :--- | :---: | :---: |
+|  $\small \Delta Z\_{t-1}$ | -0.197** (0.090) | 0.044 (0.050)    |
+| $\small CA\_{t-1}$ | -0.228** (0.099) | 0.808*** (0.055) |
 
 <small>Notes: Standard errors in parentheses. Estimated by OLS, no constant. 
 N = 119. *** p<0.01, ** p<0.05, * p<0.10. </small>
-</div>
 
 <br>
 
@@ -437,28 +435,26 @@ N = 119. *** p<0.01, ** p<0.05, * p<0.10. </small>
 </div>
 <br>
 
-<div align="center">
 Table 3. Descriptive statistics for VAR coefficients
 
-| Equation   | Regressor   |   Coefficient |   Std. Error |   t-stat |   p-value |
-|:-----------|:------------|--------------:|-------------:|---------:|----------:|
-| ΔZ_t       | ΔZ_{t-1}    |       -0.1975 |       0.0904 |  -2.1849 |    0.0289 |
-| ΔZ_t       | CA_{t-1}    |       -0.2282 |       0.0991 |  -2.3022 |    0.0213 |
-| CA_t       | ΔZ_{t-1}    |        0.0445 |       0.0501 |   0.8869 |    0.3751 |
-| CA_t       | CA_{t-1}    |        0.8084 |       0.055  |  14.6976 |    0      |
+| Equation | Regressor | Coefficient | Std. Error | t-stat | p-value |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| $\small \Delta Z_t$ | $\Delta Z_{t-1}$ | -0.1975 | 0.0904 | -2.1849 | 0.0289 |
+| $\small \Delta Z_t$ | $CA_{t-1}$ | -0.2282 | 0.0991 | -2.3022 | 0.0213 |
+| $\small CA_t$ | $\Delta Z_{t-1}$ | 0.0445 | 0.0501 | 0.8869 | 0.3751 |
+| $\small CA_t$ | $CA_{t-1}$ | 0.8084 | 0.0550 | 14.6976 | 0.0000 |
 
-</div>
 
 <br>
-<div align="center">
+
 Table 4. Modle fit summary
 
-|      |     R² |   Std. Dev. of Residuals |
-|:-----|-------:|-------------------------:|
-| ΔZ_t | 0.0747 |                   7.4307 |
-| CA_t | 0.6487 |                   4.1226 |
+| Variable | R² | Std. Dev. of Residuals |
+| :--- | ---: | ---: |
+| $\Delta Z_t$ | 0.0747 | 7.4307 |
+| $CA_t$ | 0.6487 | 4.1226 |
 
-</div>
+
 
 Figure 5 plots actual versus VAR(1)-fitted values for both equations. 
 The fitted values for $\Delta Z_t$ poorly captur the actual series and especially miss 
@@ -489,15 +485,12 @@ $\hat\Phi_{CA}$ is estimated at 0.909 — close to its predicted value of one �
 with a much larger standard error (0.417), reflecting substantial uncertainty in 
 this estimate.
 
-<div align="center">
 Table 5. Implied coefficients
 
-|      |   Estimate |   Std. Error |   H0 value |
-|:-----|-----------:|-------------:|-----------:|
-| Φ_ΔZ |     0.197  |       0.066  |          0 |
-| Φ_CA |     0.9092 |       0.4165 |          1 |
-
-</div>
+| Parameter | Estimate | Std. Error | H0 value |
+| :--- | ---: | ---: | ---: |
+| $\Phi_{\Delta Z}$ | 0.1970 | 0.0660 | 0 |
+| $\Phi_{CA}$ | 0.9092 | 0.4165 | 1 |
 
 <br>
 <div align="center">
@@ -546,14 +539,11 @@ $H_0: \Phi_{\Delta Z}=0,\ \Phi_{CA}=1$ using this Wald statistic, with 2 degrees
 of freedom corresponding to the two restrictions being tested jointly. The 
 results are reported in Table 6.
 
-<div align="center">
 Table 6. Wald test results
 
-|                           |   Statistic |   Degrees of Freedom |   p-value |
-|:--------------------------|------------:|---------------------:|----------:|
-| Wald Test: Φ_ΔZ=0, Φ_CA=1 |      9.2827 |                    2 |    0.0096 |
-
-</div>
+|  | Statistic | Degrees of Freedom | p-value |
+| :--- | ---: | ---: | ---: |
+| Wald Test: $\Phi_{\Delta Z}=0$, $\Phi_{CA}=1$ | 9.2827 | 2 | 0.0096 |
 
 The Wald statistic of 9.28 ($p < 0.01$) leads to a rejection of the null 
 hypothesis. This indicates that the current account does not move exactly as the 
