@@ -1,5 +1,5 @@
 ---
-title: "The Intertemporal Approach to the Current Account: Testing the Consumption-Smoothing Hypothesis"
+title: "Intertemporal approach to the current account: Testing the consumption-smoothing hypothesis"
 subtitle: "Evidence from Russia, 1995–2025"
 layout: post
 category: data-analysis
