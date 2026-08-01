@@ -156,6 +156,7 @@ It is convenient to introduce the lag operator $\small L$, defined by $\small L^
 so that the lead operator is $ \small L^{-k} Z_t \equiv Z_{t+k}$.
 
 Relabeling index and using $\small L^{-1}$, the forecast sum (11) can be written compactly as a geometric series in the lead operator:
+
 $$
 \small
 \begin{aligned}
@@ -300,9 +301,11 @@ $$
 where $\small \begin{bmatrix} \Phi_{\Delta Z} & \Phi_{CA} \end{bmatrix}$ collects the entire 
 matrix expression into a single row vector of reduced-form coefficients.
 
-Equation (17) expresses the model's predicted current account, $\small \widehat{CA}_t$, 
-as a function of the currently observable variables $\small \Delta Z_t$ and $\small CA_t$. It converts the infinite-horizon forecast in eq. (12) into a quantity that can be computed directly from current data, making the model's 
-forward-looking prediction empirically testable. If consumers behave according to the consumption-smoothing hypothesis, the actual current account, $\small CA_t$, should match the model's prediction, $\small \widehat{CA}_t$, allowing researchers to test the model by checking if the row vector $\small \begin{bmatrix} \Phi_{\Delta Z} & \Phi_{CA} \end{bmatrix}$ statistically equals $\small \begin{bmatrix} 0 & 1 \end{bmatrix}$.
+Equation (17) expresses the model's predicted current account, $\small \widehat{CA}\_t$, 
+as a function of the currently observable variables $\small \Delta Z\_t$ and $\small CA\_t$. It converts the infinite-horizon forecast in eq. (12) 
+into a quantity that can be computed directly from current data, making the model's 
+forward-looking prediction empirically testable. If consumers behave according to the consumption-smoothing hypothesis, the actual current account, 
+$\small CA\_t$, should match the model's prediction, $\small \widehat{CA}\_t$, allowing researchers to test the model by checking if the row vector $\small \begin{bmatrix} \Phi\_{\Delta Z} & \Phi\_{CA} \end{bmatrix}$ statistically equals $\small \begin{bmatrix} 0 & 1 \end{bmatrix}$.
 
 ### 3. Empirical analysis
 
