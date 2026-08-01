@@ -40,9 +40,9 @@ between actual and expected present-value net output (eq. 42), and the predicted
 current account, based on a VAR in net output changes and the current account 
 (eq. 45). I then estimate this VAR using quarterly data on GDP, government spending, 
 investment, and the current account for Russia over the period 1995Q2–2025Q1, 
-construct the model-implied predicted current account $\small \widehat{CA}_t$, and test 
+construct the model-implied predicted current account \(\small \widehat{CA}_t\(, and test 
 the model using a Wald test. The results reject the 
-model's restriction that $\small \Phi_{\Delta Z}=0$ and $\Phi_{CA}=1$ ($W=9.28$, 
+model's restriction that \(\small \Phi_{\Delta Z}=0\( and \(\Phi_{CA}=1\( (\(W=9.28\(, 
 $p<0.01$), indicating that Russia's current account does not conform exactly to 
 the consumption-smoothing hypothesis, although the model-predicted series 
 tracks the direction and timing of actual current account movements 
