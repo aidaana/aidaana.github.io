@@ -367,25 +367,25 @@ Finally, both per-capita series are expressed as deviations from their respectiv
 sample means.
 
 <div align="center">
-<img src="figures/fig_real_gdp.png" width="700">
+<img src="/assets/images/figures/fig_real_gdp.png" width="700">
 <p>Figure 1. Real, seasonally adjusted GDP, government spending, and investment (billion RUB, 2021 prices)</p>
 </div>
 <br>
 
 <div align="center">
-<img src="figures/fig_net_output.png" width="700">
+<img src="/assets/images/figures/fig_net_output.png" width="700">
 <p>Figure 2. Net output and net output changes (billion RUB, 2021 prices)<p>
 </div>
 <br>
 
 <div align="center">
-<img src="figures/fig_ca.png" width="700">
+<img src="/assets/images/figures/fig_ca.png" width="700">
 <p>Figure 3. Real current account (billion RUB, 2021 prices)<p>
 </div>
 <br>
 
 <div align="center">
-<img src="figures/fig_per_capita.png" width="700">
+<img src="/assets/images/figures/fig_per_capita.png" width="700">
 <p>Figure 4. Per-capita raw vs demeaned net output change and current account <p>
 </div>
 <br>
@@ -438,7 +438,7 @@ N = 119. *** p<0.01, ** p<0.05, * p<0.10. </small>
 <br>
 
 <div align="center">
-<img src="figures/fig_var_fitted.png" width="700">
+<img src="/assets/images/figures/fig_var_fitted.png" width="700">
 <p>Figure 5. Actual vs VAR(1)-fitted net output change and current account <p>
 </div>
 <br>
@@ -507,7 +507,7 @@ Table 5. Implied coefficients
 
 <br>
 <div align="center">
-<img src="figures/fig_final.png" width="700">
+<img src="/assets/images/figures/fig_final.png" width="700">
 <p> Figure 6. Actual and model-predicted current account <p>
 </div>
 
