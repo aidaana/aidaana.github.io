@@ -419,7 +419,7 @@ $\small \hat\Psi = \begin{bmatrix}\hat\psi_{11} & \hat\psi_{12}\\ \hat\psi_{21} 
 
 Table 2. Estimated VAR(1) coefficients
 
-|          | ΔZ_t             | CA_t             |
+|          | $\small \Delta Z\_t $             | $\small CA_t$             |
 | :--- | :---: | :---: |
 |  $\small \Delta Z\_{t-1}$ | -0.197** (0.090) | 0.044 (0.050)    |
 | $\small CA\_{t-1}$ | -0.228** (0.099) | 0.808*** (0.055) |
@@ -447,9 +447,9 @@ Table 3. Descriptive statistics for VAR coefficients
 
 <br>
 
-Table 4. Modle fit summary
+Table 4. Model fit summary
 
-| Variable | R² | Std. Dev. of Residuals |
+| Variable | $R^2$ | Std. Dev. of Residuals |
 | :--- | ---: | ---: |
 | $\Delta Z_t$ | 0.0747 | 7.4307 |
 | $CA_t$ | 0.6487 | 4.1226 |
@@ -471,18 +471,18 @@ their use requires a more generalized version of model-predicted current account
 #### 3.3 Predicted current account
 
 Using the estimated VAR coefficient matrix $\small \hat\Psi$, I construct the model's 
-predicted current account, $\small \widehat{CA}_t$, following eq. (17). Setting the discount rate to $r = 0.01$ per quarter, I 
-compute the implied reduced-form coefficients $\small \hat\Phi_{\Delta Z}$ and 
-$\small \hat\Phi_{CA}$ from $\small \hat\Psi$ and construct the fitted series as $\small \widehat{CA}_t = \hat\Phi_{\Delta Z}\Delta Z_t + \hat\Phi_{CA}CA_t$. Standard errors for $\small \hat\Phi_{\Delta Z}$ and $\hat\Phi_{CA}$ 
+predicted current account, $\small \widehat{CA}\_t$, following eq. (17). Setting the discount rate to $r = 0.01$ per quarter, I 
+compute the implied reduced-form coefficients $\small \hat\Phi\_{\Delta Z}$ and 
+$\small \hat\Phi\_{CA}$ from $\small \hat\Psi$ and construct the fitted series as $\small \widehat{CA}\_t = \hat\Phi\_{\Delta Z}\Delta Z\_t + \hat\Phi\_{CA}CA\_t$. Standard errors for $\small \hat\Phi\_{\Delta Z}$ and $\hat\Phi\_{CA}$ 
 are obtained via the delta method, since both are nonlinear functions of the 
 estimated VAR coefficients $\small \hat\Psi$. I then test the model's implied joint 
-restriction, $\small H_0: \Phi_{\Delta Z} = 0,\ \Phi_{CA} = 1$, using a Wald test. 
+restriction, $\small H_0: \Phi\_{\Delta Z} = 0,\ \Phi\_{CA} = 1$, using a Wald test. 
 
-The computed implied coefficients are reported in Table 5. $\hat\Phi_{\Delta Z}$ 
+The computed implied coefficients are reported in Table 5. $\hat\Phi\_{\Delta Z}$ 
 is estimated at 0.197 with a relatively small standard error (0.066), placing it 
 notably above its predicted value of zero with reasonable precision. 
-$\hat\Phi_{CA}$ is estimated at 0.909 — close to its predicted value of one — but 
-with a much larger standard error (0.417), reflecting substantial uncertainty in 
+$\hat\Phi\_{CA}$ is estimated at 0.909, which is close to its predicted value of one but 
+has a much larger standard error (0.417), reflecting substantial uncertainty in 
 this estimate.
 
 Table 5. Implied coefficients
