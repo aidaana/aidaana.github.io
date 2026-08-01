@@ -386,7 +386,6 @@ sample means.
 </div>
 <br>
 
-<div align="center">
 Table 1. Descriptive statistics for net output, change in net output, and the current account
 
 | Variable | N | Mean | Std. Dev. | Min | Max |
@@ -395,9 +394,7 @@ Table 1. Descriptive statistics for net output, change in net output, and the cu
 | $\Delta Z_t$ (thousand RUB per capita) | 120 | 0.95 | 7.68 | -17.48 | 23 |
 | $CA_t$ (thousand RUB per capita) | 121 | 9.82 | 6.88 | -6.92 | 32 |
 
-</div>
-
-##### 3.1.1 Stationarity check. The Augmented Dickey-Fuller (ADF) test
+#### 3.1.1 Stationarity check. The Augmented Dickey-Fuller (ADF) test
 
 Before estimating the VAR, I test $\small \Delta Z_t$ and $CA_t$ for stationarity using 
 the Augmented Dickey-Fuller (ADF) test. The ADF test's null hypothesis is that a 
@@ -436,7 +433,7 @@ N = 119. *** p<0.01, ** p<0.05, * p<0.10. </small>
 
 <div align="center">
 <img src="/assets/images/figures/fig_var_fitted.png" width="700">
-<p>Figure 5. Actual vs VAR(1)-fitted net output change and current account <p>
+<p>Figure 5. Actual vs VAR(1)-fitted net output change and current account </p>
 </div>
 <br>
 
@@ -475,7 +472,7 @@ by lagged net output changes, while net output changes themselves are largely
 unpredictable from either variable's one-quarter-lagged history. Higher order VAR estimates produce better estimates but 
 their use requires a more generalized version of model-predicted current account equation (17). 
 
-#### 3.3. Predicted current account
+#### 3.3 Predicted current account
 
 Using the estimated VAR coefficient matrix $\small \hat\Psi$, I construct the model's 
 predicted current account, $\small \widehat{CA}_t$, following eq. (17). Setting the discount rate to $r = 0.01$ per quarter, I 
@@ -505,7 +502,7 @@ Table 5. Implied coefficients
 <br>
 <div align="center">
 <img src="/assets/images/figures/fig_final.png" width="700">
-<p> Figure 6. Actual and model-predicted current account <p>
+<p> Figure 6. Actual and model-predicted current account </p>
 </div>
 
 Figure 6 shows that the model-predicted current account tracks the actual series 
