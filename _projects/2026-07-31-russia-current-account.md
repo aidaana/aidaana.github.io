@@ -348,6 +348,7 @@ government spending, and investment are seasonally adjusted. Net output is defin
 first difference, $\small \Delta Z_t$, is computed from the seasonally adjusted 
 real series.
 
+
 To construct the real current account series, the current account, originally reported 
 in millions of US dollars, is converted to rubles using the quarterly average 
 RUB/USD exchange rate. The nominal ruble series is then deflated using the 
@@ -355,18 +356,22 @@ implicit price index $\small P_t$, computed as the ratio of nominal to real GDP.
 The series is then seasonally adjusted. It is worth noting that RUB/USD exchange rate 
 used to convert the current account to rubles is volatily and may introduce noise into the real current account.
 
+
 Both $\small \Delta Z_t$ and $\small CA_t$ are divided by population to obtain per-capita terms. 
 As Rosstat's population series is reported annually, it is interpolated to quarterly frequency 
 by linear interpolation.
 
+
 Finally, both per-capita series are expressed as deviations from their respective 
 sample means.
+
 
 <div align="center">
 <img src="/assets/images/figures/fig_real_gdp.png" width="700">
 <p>Figure 1. Real, seasonally adjusted GDP, government spending, and investment (billion RUB, 2021 prices)</p>
 </div>
 <br>
+
 
 <div align="center">
 <img src="/assets/images/figures/fig_net_output.png" width="700">
