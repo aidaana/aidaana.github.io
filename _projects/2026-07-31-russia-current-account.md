@@ -20,6 +20,12 @@ category: data-analysis
     font-size: 0.9em !important;
   }
 
+  /* New rule to perfectly center images and their titles together */
+  .figure-container {
+    text-align: center !important;
+    margin-bottom: 30px !important;
+  }
+  
    /* Unbolds the top row headers */
   table th {
     font-weight: normal !important;      /* Changes text from bold to standard weight */
