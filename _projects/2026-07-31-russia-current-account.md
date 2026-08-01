@@ -6,14 +6,15 @@ category: data-analysis
 ---
 <script>
 MathJax = {
+  options: {
+    processHtmlClass: 'tex2jax_process' // Forces processing inside specific classes
+  },
   tex: {
     tags: 'ams',
     inlineMath: [['$', '$'], ['\\(', '\\)']]
   }
 };
 </script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 #### Table of Contents
 
@@ -29,7 +30,8 @@ MathJax = {
 - [4. Conclusion](#4-conclusion)
 - [References](#references)
 - [Data Sources](#data-sources)
-- 
+
+<div class="tex2jax_process">
 ### 1. Introduction
 
 This report examines the empirical validity of the stochastic intertemporal current 
@@ -615,3 +617,4 @@ Size*. Demography. Retrieved fromhttps://rosstat.gov.ru/folder/12781
 Central Bank of the Russian Federation. *Balance of Payments of the Russian Federation (Standard Components)*. Retrieved from https://www.cbr.ru/statistics/macro_itm/external_sector/pb/
 
 Organization for Economic Co-operation and Development, Currency Conversions: *US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Russia* [CCUSMA02RUQ618N], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/CCUSMA02RUQ618N, July 27, 2026.
+</div>
