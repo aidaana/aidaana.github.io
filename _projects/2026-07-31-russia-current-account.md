@@ -38,6 +38,12 @@ category: data-analysis
 
 <script>MathJax = { tex: { tags: 'ams', inlineMath: [['$', '$'], ['\\(', '\\)']] }};</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+<div class="button" style="margin-top: 10px; margin-bottom: 25px;">
+  <a href="https://github.com/aidaana/present-value-current-account" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+    📁 View Source Code & Data on GitHub
+  </a>
+</div>
+
 #### Table of Contents
 
 - [1. Introduction](#1-introduction)
