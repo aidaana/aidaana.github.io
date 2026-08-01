@@ -184,7 +184,6 @@ $$
 \end{aligned}
 $$
 
-
 Substituting the result into (10):
 
 $$
@@ -366,7 +365,6 @@ government spending, and investment are seasonally adjusted. Net output is defin
 first difference, $\small \Delta Z_t$, is computed from the seasonally adjusted 
 real series.
 
-
 To construct the real current account series, the current account, originally reported 
 in millions of US dollars, is converted to rubles using the quarterly average 
 RUB/USD exchange rate. The nominal ruble series is then deflated using the 
@@ -374,22 +372,18 @@ implicit price index $\small P_t$, computed as the ratio of nominal to real GDP.
 The series is then seasonally adjusted. It is worth noting that RUB/USD exchange rate 
 used to convert the current account to rubles is volatily and may introduce noise into the real current account.
 
-
 Both $\small \Delta Z_t$ and $\small CA_t$ are divided by population to obtain per-capita terms. 
 As Rosstat's population series is reported annually, it is interpolated to quarterly frequency 
 by linear interpolation.
 
-
 Finally, both per-capita series are expressed as deviations from their respective 
 sample means.
-
 
 <div align="center">
 <img src="/assets/images/figures/fig_real_gdp.png" width="700">
 <p>Figure 1. Real, seasonally adjusted GDP, government spending, and investment (billion RUB, 2021 prices)</p>
 </div>
 <br>
-
 
 <div align="center">
 <img src="/assets/images/figures/fig_net_output.png" width="700">
@@ -439,7 +433,6 @@ using Python's `statsmodels` package. The resulting coefficient matrix,
 $\small \hat\Psi = \begin{bmatrix}\hat\psi_{11} & \hat\psi_{12}\\ \hat\psi_{21} & 
 \hat\psi_{22}\end{bmatrix}$, is reported in Table 2 below. Descriptive statistics and model fit summary are given in Tables 3 and 4, respectively.
 
-
 Table 2. Estimated VAR(1) coefficients
 
 |          | $\small \Delta Z\_t $             | $\small CA_t$             |
@@ -449,8 +442,6 @@ Table 2. Estimated VAR(1) coefficients
 
 <small>Notes: Standard errors in parentheses. Estimated by OLS, no constant. 
 N = 119. *** p<0.01, ** p<0.05, * p<0.10. </small>
-
-<br>
 
 <div align="center">
 <img src="/assets/images/figures/fig_var_fitted.png" width="700">
@@ -467,17 +458,12 @@ Table 3. Descriptive statistics for VAR coefficients
 | $\small CA_t$ | $\Delta Z_{t-1}$ | 0.0445 | 0.0501 | 0.8869 | 0.3751 |
 | $\small CA_t$ | $CA_{t-1}$ | 0.8084 | 0.0550 | 14.6976 | 0.0000 |
 
-
-<br>
-
 Table 4. Model fit summary
 
 | Variable | $R^2$ | Std. Dev. of Residuals |
 | :--- | ---: | ---: |
 | $\Delta Z_t$ | 0.0747 | 7.4307 |
 | $CA_t$ | 0.6487 | 4.1226 |
-
-
 
 Figure 5 plots actual versus VAR(1)-fitted values for both equations. 
 The fitted values for $\Delta Z_t$ poorly captur the actual series and especially miss 
@@ -515,7 +501,6 @@ Table 5. Implied coefficients
 | $\Phi_{\Delta Z}$ | 0.1970 | 0.0660 | 0 |
 | $\Phi_{CA}$ | 0.9092 | 0.4165 | 1 |
 
-<br>
 <div align="center">
 <img src="/assets/images/figures/fig_final.png" width="700">
 <p> Figure 6. Actual and model-predicted current account </p>
@@ -612,11 +597,11 @@ Cambridge, MA: MIT Press.
 
 ### Data Sources
 
-Federal State Statistics Service of the Russian Federation (Rosstat). *GDP by Quarter, Expenditure Approach, since 1995*.National Accounts. Retrieved from https://rosstat.gov.ru/statistics/accounts
+Federal State Statistics Service of the Russian Federation (Rosstat). *GDP by Quarter, Expenditure Approach, since 1995*.National Accounts. Retrieved from [https://rosstat.gov.ru/statistics/accounts](https://rosstat.gov.ru/statistics/accounts)
 
 Federal State Statistics Service of the Russian Federation (Rosstat). *Population 
-Size*. Demography. Retrieved fromhttps://rosstat.gov.ru/folder/12781
+Size*. Demography. Retrieved from [https://rosstat.gov.ru/folder/12781](https://rosstat.gov.ru/folder/12781)
 
-Central Bank of the Russian Federation. *Balance of Payments of the Russian Federation (Standard Components)*. Retrieved from https://www.cbr.ru/statistics/macro_itm/external_sector/pb/
+Central Bank of the Russian Federation. *Balance of Payments of the Russian Federation (Standard Components)*. Retrieved from [https://www.cbr.ru/statistics/macro_itm/external_sector/pb/](https://www.cbr.ru/statistics/macro_itm/external_sector/pb/)
 
-Organization for Economic Co-operation and Development, Currency Conversions: *US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Russia* [CCUSMA02RUQ618N], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/CCUSMA02RUQ618N, July 27, 2026.
+Organization for Economic Co-operation and Development, Currency Conversions: *US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Russia* [CCUSMA02RUQ618N], retrieved from FRED, Federal Reserve Bank of St. Louis; [https://fred.stlouisfed.org/series/CCUSMA02RUQ618N](https://fred.stlouisfed.org/series/CCUSMA02RUQ618N), July 27, 2026.
