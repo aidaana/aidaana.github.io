@@ -1,4 +1,4 @@
----
+<img width="1108" height="722" alt="image" src="https://github.com/user-attachments/assets/bc32cc95-9d30-4fec-8059-aae5f6e6d4b7" />---
 title: "Intertemporal approach to the current account: Testing the consumption-smoothing hypothesis"
 subtitle: "Evidence from Russia, 1995–2025"
 layout: post
@@ -38,11 +38,12 @@ category: data-analysis
 
 <script>MathJax = { tex: { tags: 'ams', inlineMath: [['$', '$'], ['\\(', '\\)']] }};</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<div class="button" style="margin-top: 10px; margin-bottom: 25px;">
-  <a href="https://github.com/aidaana/present-value-current-account" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
-    📁 View Source Code & Data on GitHub
+<div style="margin-top: 15px; margin-bottom: 30px;">
+  <a href="https://github.com/aidaana/present-value-current-account" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border: 1px solid light-dark(#ccc, #444); border-radius: 4px; color: light-dark(#333, #ccc); font-size: 0.85em; text-decoration: none; background: transparent; font-weight: 500;">
+    Code & Data on GitHub →
   </a>
 </div>
+
 
 #### Table of Contents
 
