@@ -12,7 +12,11 @@ category: data-analysis
   
   /* Automatically add an empty line gap below all markdown tables */
   table { 
-    margin-bottom: 35px !important; 
+    max-width: 75% !important;           /* Controls the table width (lower = smaller) */
+    margin-left: auto !important;        /* Centers horizontally */
+    margin-right: auto !important;       /* Centers horizontally */
+    margin-bottom: 35px !important;      /* Keeps the empty line gap below the table */
+    font-size: 0.9em !important;         /* Makes text/cells slightly tighter and more compact */
   }
   
   /* Automatically add spacing above and below section headers */
