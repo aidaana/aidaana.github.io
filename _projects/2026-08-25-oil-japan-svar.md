@@ -1,5 +1,5 @@
 ---
-title: "Pass-through analysis of oil price and exchange rate shocks to Japan's prices through Choleski ordering of SVAR"
+title: "Pass-through analysis of oil price and exchnage rate shocks to Japanese prices through Choleski ordering of SVAR"
 subtitle: ""
 layout: post
 category: data-analysis
@@ -73,11 +73,7 @@ The dramatic developments in oil supply since the start of the war in the Middle
 
 In this study, I use Cholesky ordering of the SVAR model to identify structural shocks (oil price shocks and exchange rate shocks) and the responses of import prices of crude oil and Japan's headline CPI to these shocks and to estimate magnitude and speed of pass-through rates along the presented chain of variables. I conduct the analysis on the full sample spanning 1987 through 2026. In order to find whether there have been any structural breaks in economics effects and pass-through rates, I conduct the analysis on three different periods the sample, roughly corresponding to domestic monetayr policy regimes: a pre-ZIRP period (May 1987 – January 1999), a ZIRP/deflation period (February 1999 – March 2013, spanning the near-zero interest rate era preceding quantitative and qualitative easing), and a QQE-to-normalization period (April 2013 – July 2026).
 
-This report finds some pass-through differences in certain channels across the three periods. Under QQE-to-present present, pass-through of oil price to Japan's crude oil import prices starts lower after one month compared to the ZIRP/deflation period (1999-2013) (66% vs. 75%) but then overshoots sharply, peaking at 138% of the shock at three months, before settling at essentially full, one-to-one pass-through (104%) by two years out — both a higher long-run level and a more volatile adjustment path than in the prior period. 
-
-The exchange rate's pass-through into import prices moved in the opposite direction: its immediate, one-month impact was slightly stronger under ZIRP/deflation (111%) than under QQE-to-present (109%), but the share of that initial impact still present after two years fell from 26% to 46%, meaning more of the initial exchange-rate-driven jump in import costs is now retained over time than during the ZIRP/deflation period, though still well below the near-full persistence seen in the pre-ZIRP data (95%). 
-
-At the CPI level, all pass-through magnitudes are very small in absolute terms — well under 2% in every case — but the direction of change across regimes is still notable. The exchange rate's pass-through into CPI nearly quintuples from the ZIRP/deflation period to QQE-to-present, rising from a negligible, slightly negative effect (−0.4%) before 2013 to a small but clearly positive effect (+1.95%) afterward. Oil's direct pass-through into CPI moves in the opposite direction, falling by roughly half, from 1.53% before 2013 to 0.64% after.
+This report finds that transmission from oil prices and the exchange rate to Japan's import costs is strong and fast, but transmission into consumer prices is much weaker and varies substantially across monetary-policy regimes. Since the introduction of QQE, the FX and monetary-policy channels have become more important for CPI, while the direct oil-to-CPI channel has weakened.
 
 This report is structured as follows. In Section 2, I present theoretial framework concerning SVAR model, identification strategies, impulse response functions. In Section 3, I specify the model, present the data and stationarity transformations, and econometrics methods. Finally in Section 4, I present results of VAR estimation and pass-through analysis obtained from impulse response functions through Cholesky ordering. 
 
@@ -93,7 +89,7 @@ The structural VAR of order p lets each variable be affected by contemporaneous 
 
 $$
 \begin{aligned}
-y\_{1,t} &= b\_{10} - b_{12}y_{2,t} - b_{13}y_{3,t} - b_{14}y_{4,t} - b_{15}y_{5,t} + \sum_{i=1}^{p}\big(\gamma^{(i)}_{11}y_{1,t-i} + \gamma^{(i)}_{12}y_{2,t-i} + \gamma^{(i)}_{13}y_{3,t-i} + \gamma^{(i)}_{14}y_{4,t-i} + \gamma^{(i)}_{15}y_{5,t-i}\big) + \varepsilon_{1,t} \\[6pt]
+y_{1,t} &= b_{10} - b_{12}y_{2,t} - b_{13}y_{3,t} - b_{14}y_{4,t} - b_{15}y_{5,t} + \sum_{i=1}^{p}\big(\gamma^{(i)}_{11}y_{1,t-i} + \gamma^{(i)}_{12}y_{2,t-i} + \gamma^{(i)}_{13}y_{3,t-i} + \gamma^{(i)}_{14}y_{4,t-i} + \gamma^{(i)}_{15}y_{5,t-i}\big) + \varepsilon_{1,t} \\[6pt]
 y_{2,t} &= b_{20} - b_{21}y_{1,t} - b_{23}y_{3,t} - b_{24}y_{4,t} - b_{25}y_{5,t} + \sum_{i=1}^{p}\big(\gamma^{(i)}_{21}y_{1,t-i} + \gamma^{(i)}_{22}y_{2,t-i} + \gamma^{(i)}_{23}y_{3,t-i} + \gamma^{(i)}_{24}y_{4,t-i} + \gamma^{(i)}_{25}y_{5,t-i}\big) + \varepsilon_{2,t} \\[6pt]
 &\ \ \vdots \\[6pt]
 y_{5,t} &= b_{50} - b_{51}y_{1,t} - b_{52}y_{2,t} - b_{53}y_{3,t} - b_{54}y_{4,t} + \sum_{i=1}^{p}\big(\gamma^{(i)}_{51}y_{1,t-i} + \gamma^{(i)}_{52}y_{2,t-i} + \gamma^{(i)}_{53}y_{3,t-i} + \gamma^{(i)}_{54}y_{4,t-i} + \gamma^{(i)}_{55}y_{5,t-i}\big) + \varepsilon_{5,t}
@@ -294,7 +290,7 @@ This ratio represents the fraction of the total move in the upstream variable $k
 
 #### 3.1 Data
 
-The benchmark five-model VAR model is estimated on monthly time series spanning June 1987 to July 2026 (470 observations), all log-differenced except bond yields series, whose first difference is used: the Brent crude oil price (USD per barrel), 10-year Japanese government bonds (JGB) yields, the nominal JPY/USD exchange rate, Japan's import price index for crude petroleum (yen basis), and Japan's headline CPI. All series are non-seasonally adjusted. Table 1 summarizes the raw data sources.
+The benchmark five-model VAR model is estimated on monthly time series spanning May 1987 to July 2026 (471 observations), all log-differenced except bond yields series, whose first difference is used: the Brent crude oil price (USD per barrel), 10-year Japanese government bonds (JGB) yields, the nominal JPY/USD exchange rate, Japan's import price index for crude petroleum (yen basis), and Japan's headline CPI. All series are non-seasonally adjusted. Table 1 summarizes the raw data sources.
 
 <div style="text-align: center;">Table 1. Data sources</div> 
 
@@ -306,9 +302,9 @@ The benchmark five-model VAR model is estimated on monthly time series spanning 
 | Crude petroleum import price index | Corporate Goods Price Index (2020 base), Import Price Index, yen basis, Crude petroleum (commodity) | [Bank of Japan (BOJ)](https://www.stat-search.boj.or.jp/index_en.html) | Jan 1980 – Jul 2026 |
 | CPI, all items (headline CPI) | Monthly index (2020 base) | [Statistics Bureau of Japan](https://www.e-stat.go.jp/en/stat-search/files?page=1&toukei=00200573&tstat=000001150147&metadata=1&data=1) | Jan 1970 – Jul 2026 |
 
-The common data span across these time-series is from June 1987 to July 2026, which I will use in the benchmark model.
+The common time period across these time-series is from June 1987 to July 2026, which I will use in the benchmark model.
 
-To check the time series for non-stationarity, I use both the Augmented Dickey-Fuller (ADF) test to evaluate the null hypothesis of a unit root against a stationary alternative and  the Kwiatkowski-Phillips-Schmidt-Shin (KPSS) test to evaluate the null hypothesis of trend-stationarity. As expected, all raw series fail to reject the unit-root null under ADF and reject stationarity under KPSS, motivating the use of log or first differences in the model.
+To check the time series for non-stationarity, I use both the Augmented Dickey-Fuller (ADF) test to evaluate the null hypothesis of a unit root against a stationary alternative and  the Kwiatkowski-Phillips-Schmidt-Shin (KPSS) test to evaluate the null hypothesis of trend-stationarity. As expected, all raw series fail to reject the unit-root null under ADF and reject stationarity under KPSS (Table 2), motivating the use of log or first differences of the series.
 
 <div style="text-align: center;">Table 2. Stationarity test results (levels) </div> 
 
@@ -320,7 +316,7 @@ To check the time series for non-stationarity, I use both the Augmented Dickey-F
 | Crude petroleum | -1.08 | 0.723 | Non-stationary | 2.7 | 0.01 | Non-stationary |
 | CPI - Headline | -0.31 | 0.924 | Non-stationary | 2.17 | 0.01 | Non-stationary |
 
-Table 3 reports ADF and KPSS test results after transforming each series: log-differences for Brent, the exchange rate, the crude petroleum import price index, and CPI, and a first difference for the JGB 10-year yield. Across all five series, both tests are unambiguous: ADF strongly rejects the unit-root null (p < 0.02 in all cases) and KPSS fails to reject stationarity (p ≥ 0.08).
+Table 3 reports ADF and KPSS test results after transforming each series: log-differences for Brent, the exchange rate, the crude petroleum import price index, and CPI, and a first difference for the JGB 10-year yield. For all five series, both tests are unambiguous: ADF strongly rejects the unit-root null (p < 0.02 in all cases) and KPSS fails to reject stationarity (p ≥ 0.08).
 
 <div style="text-align: center;">Table 3. Stationarity test results (log/first differences)</div>
 
@@ -332,36 +328,30 @@ Table 3 reports ADF and KPSS test results after transforming each series: log-di
 | Crude petroleum - log-diff | -13.59 | 0.0 | Stationary | 0.07 | 0.1 | Stationary |
 | CPI - Headline - log-diff | -3.37 | 0.012 | Stationary | 0.38 | 0.084 | Stationary |
 
-Next are the figures of raw-level time series of five variables.
+Figures 1-5 plot raw-level time series of the model's five variables.
 
 <div align="center">
 <img src="/assets/images/figures-oil/fig_brent.png" width="700">
-<p> </p>
-</div>
-<br>
-
-<div align="center">
-<img src="figures/fig_brent.png" width="800">
 <p> <p>
 </div>
 
 <div align="center">
-<img src="figures/fig_jgb.png" width="800">
+<img src="/assets/images/figures-oil/fig_jgb.png" width="700">
 <p> <p>
 </div>
 
 <div align="center">
-<img src="figures/fig_yen.png" width="800">
+<img src="/assets/images/figures-oil/fig_yen.png" width="700">
 <p> <p>
 </div>
 
 <div align="center">
-<img src="figures/fig_crude_petroleum.png" width="800">
+<img src="/assets/images/figures-oil/fig_crude_petroleum.png" width="700">
 <p> <p>
 </div>
 
 <div align="center">
-<img src="figures/fig_cpi.png" width="800">
+<img src="/assets/images/figures-oil//fig_cpi.png" width="800">
 <p> <p>
 </div>
 
@@ -390,26 +380,43 @@ $$
 x_t = A_0 + \sum_{i=1}^{p} A_i\, x_{t-i} + B\, d_t + u_t
 $$
 
-where $p$ is the lag order; $d_t$ is a vector of exogenous controls comprising eleven monthly seasonal dummies and four consumption-tax-hike dummies, included to absorb deterministic calendar effects and known fiscal policy interventions from the CPI equation; and $u_t$ is the vector of reduced-form residuals, with variance-covariance matrix $\Sigma_u$.
+where $p$ is the lag order; $d_t$ is a vector of exogenous varianles consisitng of eleven monthly seasonal dummies and four consumption-tax-hike dummies, included to absorb seasonal effects and known fiscal policy interventions from the CPI equation; and $u_t$ is the vector of reduced-form residuals, with variance-covariance matrix $\Sigma_u$.
 
 To generate structural shocks from $\Sigma_u$, we use its Cholesky decomposition. The relationship between the reduced-form VAR residuals ($u_t$) and the structural shocks ($\varepsilon_t$) can be written as follows:
 
 $$
-\begin{pmatrix} u_t^{\text{oil}} \\ u_t^{\text{fx}} \\ u_t^{\text{imp}} \\ u_t^{p} \end{pmatrix}
+\begin{pmatrix}
+u_t^{\text{oil}} \\
+u_t^{\text{jgb}} \\
+u_t^{\text{fx}} \\
+u_t^{\text{imp}} \\
+u_t^{p}
+\end{pmatrix}
 =
 \begin{pmatrix}
-p_{11} & 0 & 0 & 0 \\
-p_{21} & p_{22} & 0 & 0 \\
-p_{31} & p_{32} & p_{33} & 0 \\
-p_{41} & p_{42} & p_{43} & p_{44}
+p_{11} & 0 & 0 & 0 & 0 \\
+p_{21} & p_{22} & 0 & 0 & 0 \\
+p_{31} & p_{32} & p_{33} & 0 & 0 \\
+p_{41} & p_{42} & p_{43} & p_{44} & 0 \\
+p_{51} & p_{52} & p_{53} & p_{54} & p_{55}
 \end{pmatrix}
-\begin{pmatrix} \varepsilon_t^{\text{oil}} \\ \varepsilon_t^{\text{fx}} \\ \varepsilon_t^{\text{imp}} \\ \varepsilon_t^{p} \end{pmatrix}
+\begin{pmatrix}
+\varepsilon_t^{\text{oil}} \\
+\varepsilon_t^{\text{jgb}} \\
+\varepsilon_t^{\text{fx}} \\
+\varepsilon_t^{\text{imp}} \\
+\varepsilon_t^{p}
+\end{pmatrix}
 \tag{8}
 $$
 
-where $\varepsilon_t^{\text{oil}}$ denotes the oil price shock, $\varepsilon_t^{\text{fx}}$ denotes the exchange rate shock, $\varepsilon_t^{\text{imp}}$ denotes the crude petroleum import price shock, and $\varepsilon_t^{p}$ denotes the CPI shock. The structural model is identified because for $k = 5$ endogenous variables, $k(k-1)/2 = 10$ restrictions are imposed on the matrix $P$ as zero restrictions.
+where $\varepsilon_t^{\text{oil}}$ denotes the oil price shock, 
+$\varepsilon_t^{\text{jgb}}$ denotes the JGB yield shock, 
+$\varepsilon_t^{\text{fx}}$ denotes the exchange rate shock, 
+$\varepsilon_t^{\text{imp}}$ denotes the crude petroleum import price shock, 
+and $\varepsilon_t^{p}$ denotes the CPI shock. The structural model is identified using a recursive Cholesky decomposition. For $k=5$ endogenous variables, $k(k-1)/2=10$ zero restrictions are imposed on the matrix $P$, thus making it possible to identify the contemporaneous structural relationships.
 
-The Cholesky ordering — oil price, JGB yield, exchange rate, crude petroleum import price, CPI — follows the standard logic in the exchange rate pass-through literature: variables assumed more contemporaneously exogenous are placed earlier. The oil price is ordered first, as the world price of oil is not contemporaneously affected by Japan-specific developments. The JGB yield is ordered second, ahead of the exchange rate, consistent with exchange rates' well-documented sensitivity to interest-rate differentials. The exchange rate is ordered third, ahead of the crude petroleum import price index, since yen movements are not contemporaneously driven by Japan's oil import costs, while oil and rate shocks may pass into the exchange rate within the same period. The crude petroleum import price index is ordered fourth, as the intermediate channel through which oil costs first enter Japan's price system before reaching CPI. CPI is placed last as the most contemporaneously endogenous variable in the system.
+The Cholesky ordering — oil price, JGB yield, exchange rate, crude petroleum import price, CPI — follows the standard logic in the exchange rate pass-through literature: variables assumed more contemporaneously exogenous are placed earlier. The oil price is ordered first, as the world price of oil is not contemporaneously affected by Japan-specific developments. The JGB yield is ordered second, ahead of the exchange rate, consistent with exchange rates' sensitivity to interest-rate differentials. The crude petroleum import price index is ordered fourth, as the intermediate channel through which oil costs intereacting with exchnage rate first enter Japan's prices before reaching CPI. CPI is placed last as the most contemporaneously endogenous variable in the system.
 
 #### 3.3 Estimation
 
@@ -494,12 +501,12 @@ These results indicate that Japan's crude petroleum import prices absorb oil and
 Table 6 reports cumulative pass-through rates and convergence statistics for the six channels of interest, estimated separately across the three monetary policy regimes, while Figures 6 and 7 plot those cumulative pass-through rates.
 
 <div align="center">
-<img src="figures/fig_regime_pass_through_cpi.png" width="800">
+<img src="/assets/images/figures-oil/fig_regime_pass_through_cpi.png" width="800">
 <p> <p>
 </div>
 
 <div align="center">
-<img src="figures/fig_regime_pass_through_import_prices.png" width="800">
+<img src="/assets/images/figures-oil/fig_regime_pass_through_import_prices.png" width="800">
 <p> <p>
 </div>
 
@@ -542,17 +549,17 @@ Table 6 reports cumulative pass-through rates and convergence statistics for the
 
 ### 5. Conclusion
 
-This study set out to estimate how oil price and exchange rate shocks propagate through Japan's crude oil import prices and consumer price index, and to assess whether the pass-through of these shocks has changed alongside Japan's shift in monetary policy stance — from the near-zero interest rate and deflationary environment of 1999–2013 to the quantitative and qualitative easing era from 2013 onward. A five-variable structural VAR was estimated — comprising the world oil price (Brent), Japan's 10-year government bond yield, the JPY/USD exchange rate, Japan's crude petroleum import price index, and headline CPI — identified via a recursive Cholesky ordering. The model was estimated on the full 1987–2026 sample and separately across three monetary policy regimes (Pre-ZIRP, ZIRP/Deflation, and QQE-to-present), from which impulse response functions and cumulative pass-through rates were computed for each shock-response pair of interest.
+I started this mini econometrics project with little knowledge about structural VARs, Cholesky ordering, or ways to measure pass-through, and with vague idea about what my research question is or what it is that I'm looking for. The only thing I knew I wanted to do was to explore how global oil prices propagate through Japan's crude oil import prices and consumer price index. Later, AI brainstormed some potential concrete research questions. Having picked one, I turned into learning the methodology about SVARs, residuals vs structural shocks, identification strategy and some more details on implementation.
 
-Next, I summarize the main findings:
+A five-variable structural VAR was estimated — consisting of the world oil price (Brent), Japan's 10-year government bond yield, the JPY/USD exchange rate, Japan's crude petroleum import price index, and headline CPI — identified via a recursive Cholesky ordering. The model was estimated on the full 1987–2026 sample and separately across three monetary policy regimes (Pre-ZIRP, ZIRP/Deflation, and QQE-to-present), from which impulse response functions and cumulative pass-through rates were computed for each shock-response pair of interest.
 
-1. **Oil price pass-through into Japan's crude oil import prices has grown both faster and larger since the launch of QQE.** Under the QQE-to-present regime, an oil price shock overshoots sharply within the first few months (peaking at 138% of the shock at three months) before settling to essentially full, one-to-one pass-through (104%) after two years — both a higher long-run level and a more volatile adjustment path than in the preceding ZIRP/deflation period (93% long-run pass-through, smoother convergence).
+Next, I summarize the main findings of this report:
 
-2. **The exchange rate's pass-through into import prices has remained immediately strong across every regime studied, but its persistence has weakened outside the earliest (pre-ZIRP) period.** All three regimes show near-full or overshooting pass-through within the first month, consistent with a close to mechanical, same-month relationship between yen movements and yen-denominated import costs. However, the share of that initial effect still present after two years falls sharply after the pre-ZIRP era, from roughly 93% (Pre-ZIRP) to 26% (ZIRP/Deflation) and back up only partially to 46% (QQE-to-present).
+1. Oil and exchange-rate shocks pass through strongly to Japan's crude import prices, but much less to CPI. Oil shocks pass through almost one-for-one to crude import prices in the full sample (93.6%), while FX pass-through is about 68%. In contrast, the long-run effects on CPI are small: about **0.80% for oil, 1.31% for FX, 0.84% for crude import prices, and 0.31% for JGB yields. Most of the CPI response occurs within the first few months.
 
-3. **At the CPI level, all pass-through magnitudes are small — under 2% in every case — but the balance between channels has shifted.** The exchange rate's pass-through into CPI rises from a negligible, slightly negative effect before 2013 (−0.4%) to a small but clearly positive effect afterward (+1.95%), nearly a five-fold increase. Oil's direct pass-through into CPI moves in the opposite direction over the same two periods, falling by roughly half (1.53% to 0.64%). Since 2013, the exchange rate has therefore overtaken oil as the larger of the two direct channels into Japanese consumer prices, even as the underlying magnitudes remain modest throughout.
+2. The transmission structure changes substantially throughout monetary-policy regimes. FX → CPI pass-through is essentially zero/negative before and during the ZIRP/deflation period (−0.38%) but rises to +1.95% under QQE. JGB → CPI also increases steadily, from 0.18% → 0.37% → 0.91%. Oil → CPI moves in the opposite direction, falling from 1.53% → 1.16% → 0.64%.
 
-4. **These patterns point to a change in the composition of Japan's inflation transmission mechanism, rather than a uniform amplification of all channels.** Rather than every channel simply strengthening together since the launch of QQE, the evidence indicates a reallocation: oil's transmission into import prices has intensified and accelerated, the exchange rate's role in ultimately reaching consumer prices has grown, while oil's own direct link to consumer prices has weakened. This is broadly consistent with the study's original hypothesis that Japan's shift toward more accommodative, and subsequently normalizing, monetary policy has altered how external price shocks reach domestic consumers — though the specific channel through which this occurs (exchange rate and import-price dynamics, rather than a uniform amplification of oil shocks themselves) is more precise than the hypothesis as originally framed.
+3. The FX → crude-import-price channel weakens in persistence despite remaining strong on impact. Initial FX pass-through is close to or above 100% in all regimes, but long-run pass-through falls from 92.9% pre-ZIRP to 25.8% during ZIRP/deflation, before recovering to 46.4% under QQE. Oil → crude-import-price pass-through strengthens, reaching 104.3% under QQE, with short-run overshooting.
 
 ### References
 
