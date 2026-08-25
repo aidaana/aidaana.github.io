@@ -5,12 +5,53 @@ layout: post
 category: data-analysis
 ---
 
+<style>
+  html {
+    scroll-padding-top: 140px !important;
+    scroll-behavior: smooth; /* Optional: adds a smooth transition effect */
+  }
+  /* Automatically add an empty line gap below all paragraphs */
+  p { 
+    margin-bottom: 25px !important; 
+  }
+  
+  /* Automatically add an empty line gap below all markdown tables */
+  table { 
+    display: table !important;           /* Overrides theme structural box locks */
+    max-width: 75% !important;           /* Adjusts target size layout footprint */
+    margin-left: auto !important;        /* Computes centered alignment blocks */
+    margin-right: auto !important;       /* Computes centered alignment blocks */
+    margin-bottom: 35px !important;      /* Keeps the empty line gap below the table */
+    font-size: 0.9em !important;
+  }
+  
+   /* Unbolds the top row headers */
+  table th {
+    font-weight: normal !important;      /* Changes text from bold to standard weight */
+  }
+  
+  /* Automatically add spacing above and below section headers */
+  h3, h4, h5 { 
+    margin-top: 40px !important;
+    margin-bottom: 20px !important; 
+  }
+</style>
+
+<script>MathJax = { tex: { tags: 'ams', inlineMath: [['$', '$'], ['\\(', '\\)']] }};</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<div style="margin-top: 15px; margin-bottom: 30px;">
+  <a href="https://github.com/aidaana/present-value-current-account.git" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border: 1px solid light-dark(#ccc, #444); border-radius: 4px; color: light-dark(#333, #ccc); font-size: 0.85em; text-decoration: none; background: transparent; font-weight: 500;">
+    📁 Code & Data on GitHub →
+  </a>
+</div>
+
+#### Table of Contents
+
 - [1. Introduction](#1-introduction)
 - [2. Theoretical framework](#2-theoretical-framework)
   - [2.1 Present value model of the current account](#21-present-value-model-of-the-current-account)
   - [2.2 VAR(1)-based predicted current account](#22-var1-based-predicted-current-account)
 - [3. Empirical analysis](#3-empirical-analysis)
-
   - [3.1 Data](#31-data)
   - [3.2 VAR estimation](#32-var-estimation)
   - [3.3 Predicted current account](#33-predicted-current-account)
@@ -192,7 +233,6 @@ $$
 CA_t &= -\left(1 - \frac{L^{-1}}{1+r}\right)^{-1} \frac{\Delta Z_{t+1}}{1+r} \\
 &= -\sum_{k=0}^{\infty} \left(\frac{L^{-1}}{1+r}\right)^k \frac{\Delta Z_{t+1}}{1+r}.
 \end{aligned}
-
 $$
 
 Applying the lead operator to each summation results in: 
@@ -206,7 +246,6 @@ CA_t &= -\frac{1}{1+r} \sum_{k=0}^{\infty} \left(\frac{1}{1+r}\right)^k \mathrm{
 $$
 
 Finally, relabeling the index with $\small s = t + 1 + k$ yields:
-
 $$
 \small
 CA_t = -\sum_{s=t+1}^{\infty} \left(\frac{1}{1+r}\right)^{s-t} \mathrm{E}_t \Delta Z_s,
@@ -567,3 +606,23 @@ changes. The results suggest that the consumption-smoothing mechanism only parti
 the dynamics of Russia's current account.
 
 <div style="page-break-after: always;"></div>
+
+### References
+
+Campbell, J. Y. (1987). Does saving anticipate declining labor income? An 
+alternative test of the permanent income hypothesis. *Econometrica*, 55(6), 
+1249–1273.
+
+Obstfeld, M., & Rogoff, K. (1996). *Foundations of International Macroeconomics*. 
+Cambridge, MA: MIT Press.
+
+### Data Sources
+
+Federal State Statistics Service of the Russian Federation (Rosstat). *GDP by Quarter, Expenditure Approach, since 1995*.National Accounts. Retrieved from [https://rosstat.gov.ru/statistics/accounts](https://rosstat.gov.ru/statistics/accounts)
+
+Federal State Statistics Service of the Russian Federation (Rosstat). *Population 
+Size*. Demography. Retrieved from [https://rosstat.gov.ru/folder/12781](https://rosstat.gov.ru/folder/12781)
+
+Central Bank of the Russian Federation. *Balance of Payments of the Russian Federation (Standard Components)*. Retrieved from [https://www.cbr.ru/statistics/macro_itm/external_sector/pb/](https://www.cbr.ru/statistics/macro_itm/external_sector/pb/)
+
+Organization for Economic Co-operation and Development, Currency Conversions: *US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Russia* [CCUSMA02RUQ618N], retrieved from FRED, Federal Reserve Bank of St. Louis; [https://fred.stlouisfed.org/series/CCUSMA02RUQ618N](https://fred.stlouisfed.org/series/CCUSMA02RUQ618N), July 27, 2026.
