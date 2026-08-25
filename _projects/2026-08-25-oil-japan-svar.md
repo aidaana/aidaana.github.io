@@ -58,9 +58,9 @@ category: data-analysis
   - [3.3 Estimation](#33-estimation)
   - [3.4 Comparison accross periods](#34-comparison-accross-periods)
 - [4. Results](#4-results)
-  - [4.1 Baseline estimation results (1987–2026)](#41-baseline-estimation-results-1987-2026)
+  - [4.1 Baseline estimation results (1987–2026)](#41-baseline-estimation-results-19872026)
   - [4.2 Oil, exchange rate, and monetary policy pass-through](#42-oil-exchange-rate-and-monetary-policy-pass-through)
-  - [4.3 Pass-through: regime comparison](#44-pass-through-regime-comparison)
+  - [4.3 Pass-through: regime comparison](#43-pass-through-regime-comparison) 
 - [5. Conclusion](#5-conclusion)
 - [References](#references)
 - [Data sources](#data-sources)
@@ -594,15 +594,15 @@ Next, I summarize the main findings of this report:
 
 ### Data sources
 
-U.S. Energy Information Administration (EIA). *Europe Brent Spot Price FOB (Dollars per Barrel)*. Retrieved from https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=M
+U.S. Energy Information Administration (EIA). *Europe Brent Spot Price FOB (Dollars per Barrel)*. Retrieved from [https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=M](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=M)
 
-Ministry of Finance, Japan. *Interest Rate Data — Japanese Government Bonds*. Retrieved from https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/index.htm
+Ministry of Finance, Japan. *Interest Rate Data — Japanese Government Bonds*. Retrieved from [https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/index.htm](https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/index.htm)
 
-Organization for Economic Co-operation and Development, Currency Conversions: *US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Japan* [CCUSMA02JPM618N], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/CCUSMA02JPM618N
+Organization for Economic Co-operation and Development, Currency Conversions: *US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Japan* [CCUSMA02JPM618N], retrieved from FRED, Federal Reserve Bank of St. Louis; [https://fred.stlouisfed.org/series/CCUSMA02JPM618N](https://fred.stlouisfed.org/series/CCUSMA02JPM618N)
 
-Bank of Japan. *Corporate Goods Price Index (2020 Base), Import Price Index (Yen Basis)*. Time-Series Data Search. Retrieved from https://www.stat-search.boj.or.jp/index_en.html
+Bank of Japan. *Corporate Goods Price Index (2020 Base), Import Price Index (Yen Basis)*. Time-Series Data Search. Retrieved from [https://www.stat-search.boj.or.jp/index_en.html](https://www.stat-search.boj.or.jp/index_en.html)
 
-Statistics Bureau of Japan. *Consumer Price Index (2020 Base)*. Retrieved from https://www.e-stat.go.jp/en/stat-search/files?page=1&toukei=00200573&tstat=000001150147&metadata=1&data=1
+Statistics Bureau of Japan. *Consumer Price Index (2020 Base)*. Retrieved from [https://www.e-stat.go.jp/en/stat-search/files?page=1&toukei=00200573&tstat=000001150147&metadata=1&data=1](https://www.e-stat.go.jp/en/stat-search/files?page=1&toukei=00200573&tstat=000001150147&metadata=1&data=1)
 
 ### Appendices
 
