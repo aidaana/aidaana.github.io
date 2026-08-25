@@ -18,7 +18,7 @@ category: data-analysis
   /* Automatically add an empty line gap below all markdown tables */
   table { 
     display: table !important;           /* Overrides theme structural box locks */
-    max-width: 90% !important;           /* Adjusts target size layout footprint */
+    max-width: 100% !important;           /* Adjusts target size layout footprint */
     margin-left: auto !important;        /* Computes centered alignment blocks */
     margin-right: auto !important;       /* Computes centered alignment blocks */
     margin-bottom: 35px !important;      /* Keeps the empty line gap below the table */
@@ -328,13 +328,13 @@ Figures 1-5 plot raw-level time series of the model's five variables.
 
 <div align="center">
 <img src="/assets/images/figures-oil/fig_brent.png" width="700">
-<p> <p>
+<p style="text-align: center !important;"> </p>
 </div>
+<br>
 
 <div align="center">
 <img src="/assets/images/figures-oil/fig_jgb.png" width="700">
 <p> <p>
-</div>
 
 <div align="center">
 <img src="/assets/images/figures-oil/fig_yen.png" width="700">
