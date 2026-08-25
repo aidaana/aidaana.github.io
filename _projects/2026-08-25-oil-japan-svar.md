@@ -40,7 +40,7 @@ category: data-analysis
 <script>MathJax = { tex: { tags: 'ams', inlineMath: [['$', '$'], ['\\(', '\\)']] }};</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <div style="margin-top: 15px; margin-bottom: 30px;">
-  <a href="https://github.com/aidaana/present-value-current-account.git" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border: 1px solid light-dark(#ccc, #444); border-radius: 4px; color: light-dark(#333, #ccc); font-size: 0.85em; text-decoration: none; background: transparent; font-weight: 500;">
+  <a href="https://github.com/aidaana/svar-oil-pass-through.git" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border: 1px solid light-dark(#ccc, #444); border-radius: 4px; color: light-dark(#333, #ccc); font-size: 0.85em; text-decoration: none; background: transparent; font-weight: 500;">
     📁 Code & Data on GitHub →
   </a>
 </div>
@@ -89,10 +89,10 @@ The structural VAR of order p lets each variable be affected by contemporaneous 
 
 $$
 \begin{aligned}
-y_{1,t} &= b_{10} - b_{12}y_{2,t} - b_{13}y_{3,t} - b_{14}y_{4,t} - b_{15}y_{5,t} + \sum_{i=1}^{p}\big(\gamma^{(i)}_{11}y_{1,t-i} + \gamma^{(i)}_{12}y_{2,t-i} + \gamma^{(i)}_{13}y_{3,t-i} + \gamma^{(i)}_{14}y_{4,t-i} + \gamma^{(i)}_{15}y_{5,t-i}\big) + \varepsilon_{1,t} \\[6pt]
-y_{2,t} &= b_{20} - b_{21}y_{1,t} - b_{23}y_{3,t} - b_{24}y_{4,t} - b_{25}y_{5,t} + \sum_{i=1}^{p}\big(\gamma^{(i)}_{21}y_{1,t-i} + \gamma^{(i)}_{22}y_{2,t-i} + \gamma^{(i)}_{23}y_{3,t-i} + \gamma^{(i)}_{24}y_{4,t-i} + \gamma^{(i)}_{25}y_{5,t-i}\big) + \varepsilon_{2,t} \\[6pt]
+y_{1,t} &= b_{10} - b_{12}y_{2,t} - \ldots - b_{15}y_{5,t} + \sum_{i=1}^{p}\big(\gamma^{(i)}_{11}y_{1,t-i} + \gamma^{(i)}_{12}y_{2,t-i} + \ldots + \gamma^{(i)}_{15}y_{5,t-i}\big) + \varepsilon_{1,t} \\[6pt]
+y_{2,t} &= b_{20} - b_{21}y_{1,t} - \ldots - b_{25}y_{5,t} + \sum_{i=1}^{p}\big(\gamma^{(i)}_{21}y_{1,t-i} + \gamma^{(i)}_{22}y_{2,t-i} + \ldots + \gamma^{(i)}_{25}y_{5,t-i}\big) + \varepsilon_{2,t} \\[6pt]
 &\ \ \vdots \\[6pt]
-y_{5,t} &= b_{50} - b_{51}y_{1,t} - b_{52}y_{2,t} - b_{53}y_{3,t} - b_{54}y_{4,t} + \sum_{i=1}^{p}\big(\gamma^{(i)}_{51}y_{1,t-i} + \gamma^{(i)}_{52}y_{2,t-i} + \gamma^{(i)}_{53}y_{3,t-i} + \gamma^{(i)}_{54}y_{4,t-i} + \gamma^{(i)}_{55}y_{5,t-i}\big) + \varepsilon_{5,t}
+y_{5,t} &= b_{50} - b_{51}y_{1,t} - \ldots - b_{54}y_{4,t} + \sum_{i=1}^{p}\big(\gamma^{(i)}_{51}y_{1,t-i} + \gamma^{(i)}_{52}y_{2,t-i} + \ldots + \gamma^{(i)}_{55}y_{5,t-i}\big) + \varepsilon_{5,t}
 \end{aligned}
 \tag{1}
 $$
@@ -266,8 +266,6 @@ This is the orthogonalized (structural) moving-average representation.
 
 Each element $\theta_{jk}(i)$ of $\Theta_i$ can be interpreted as the effect, $i$ periods after the shock, of a one-unit innovation in structural shock $\varepsilon_{k}$ on variable $j$. The elements of $\Theta_0 = P$ are the impact multipliers (instantaneous effect of each structural shock on each variable). Fixing the shock variable $k$, $IRF_j(i) \equiv \theta_{jk}(i)$ is the response of variable $j$, at horizon $i$, to the (implicitly fixed) shock $k$.
 
-For the five-variable system used in this study, the five sets of sequences $\{\theta_{jk}(i)\}_{i=0}^{\infty}$ for each of the $5\times5=25$ shock-response pairs constitute the impulse response functions. Plotting $\theta_{jk}(i)$ against $i$ is the standard way of visually summarizing the dynamic response of each variable to each structural shock.
-
 The total, cumulative effect of a shock over $n$ periods is obtained by summing the impulse response coefficients:
 
 $$
@@ -276,9 +274,7 @@ $$
 
 Letting $n \to \infty$ gives the total, long-run cumulated effect of shock $k$ on variable $j$.
 
-##### Pass-through rates
-
-Pass-through rates are defined as the ratio of the **cumulative response of the output variable** to the **cumulative response of the input variable**, both attributable to the same structural shock:
+**Pass-through rates** are defined as the ratio of the cumulative response of the output variable to the cumulative response of the input variable, both attributable to the same structural shock:
 
 $$
 PT_{jk}(h) = \frac{\sum_{i=0}^{h} \theta_{jk}(i)}{\sum_{i=0}^{h} \theta_{kk}(i)} = \frac{\sum_{i=0}^{h} IRF_{j}(i)}{\sum_{i=0}^{h} IRF_{k}(i)}
