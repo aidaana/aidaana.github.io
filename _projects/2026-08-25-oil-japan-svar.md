@@ -484,14 +484,15 @@ These results indicate that Japan's crude petroleum import prices absorb oil and
 <div style="text-align: center;">Table 5. Pass-through rates over 1, 3, 6, 12, 24 months </div>
 
 | Pass-through pair    |   Month 1 |   Month 3 |   Month 6 |   Month 12 |   Month 24 |Peak pass-through |Peak horizon |   Months to 90%|
-|:---------------------|----------:|----------:|----------:|-----------:|-----------:|------------:|---------:|--------:|
-| Oil -> CPI           |    0.0047 |    0.0072 |    0.0087 |     0.008  |     0.008  |      0.009  |        5 |       2 |     
-| FX -> CPI            |    0.0097 |    0.0137 |    0.0129 |     0.0131 |     0.013  |      0.0137 |        3 |       2 |        
-| JGB10Y -> CPI        |    0.0006 |    0.0031 |    0.0032 |     0.0031 |     0.0031 |      0.0036 |        4 |       3 |      
-| CrudePet -> CPI      |    0.0097 |    0.0089 |    0.0089 |     0.0085 |     0.0084 |      0.0097 |        1 |       1 |      
-| Oil -> CrudePet      |    0.59   |    1.0721 |    0.9582 |     0.9417 |     0.9361 |      1.0721 |        3 |       2 |   
-| FX -> CrudePet       |    1.0961 |    0.872  |    0.6105 |     0.6826 |     0.6816 |      1.0961 |        1 |       0 |  
+|:---------------------|----------:|----------:|----------:|-----------:|-----------:|---------:|-------:|------:|
+| Oil -> CPI           |    0.0047 |    0.0072 |    0.0087 |     0.008  |     0.008  |   0.009  |      5 |     2 |     
+| FX -> CPI            |    0.0097 |    0.0137 |    0.0129 |     0.0131 |     0.013  |   0.0137 |      3 |     2 |        
+| JGB10Y -> CPI        |    0.0006 |    0.0031 |    0.0032 |     0.0031 |     0.0031 |   0.0036 |      4 |     3 |      
+| CrudePet -> CPI      |    0.0097 |    0.0089 |    0.0089 |     0.0085 |     0.0084 |   0.0097 |      1 |     1 |      
+| Oil -> CrudePet      |    0.59   |    1.0721 |    0.9582 |     0.9417 |     0.9361 |   1.0721 |      3 |     2 |   
+| FX -> CrudePet       |    1.0961 |    0.872  |    0.6105 |     0.6826 |     0.6816 |   1.0961 |      1 |     0 |
 
+*Note: Peak pass-through indicates the maximum cumulaive pass-through observed, Peak horizon indicates the month when peak pass-through was achieved, Months to 90% indicates how many months in took to reach 90% of the 24-month cumulative pass-through.
 
 #### 4.3 Pass-through: regime comparison
 
@@ -523,28 +524,28 @@ Table 6 reports cumulative pass-through rates and convergence statistics for the
 
 <div style="text-align: center;">Table 6. Regime pass-through summary (ordered by pairs) </div>
 
-| Pass-through pair        | regime                     |   Month_1 |   Month_3 |   Month_6 |   Month_12 |   Month_24 |   peak_PT |   peak_horizon |   months_to_90pct|   half_life_from_peak |
-|:---------------------|:---------------------------|----------:|----------:|----------:|-----------:|-----------:|----------:|---------------:|------------------------:|----------------------:|
-| Oil -> CPI          | Pre-ZIRP (1987-1999)       |    0.002  |    0.0087 |    0.0217 |     0.0133 |     0.0153 |    0.022  |              7 |                       5 |                   nan |
-| Oil -> CPI          | ZIRP/Deflation (1999-2013) |    0.0058 |    0.0115 |    0.0122 |     0.0116 |     0.0116 |    0.0128 |              5 |                       3 |                   nan |
-| Oil -> CPI          | QQE-to-present (2013-2026) |    0.0042 |    0.0071 |    0.0061 |     0.0064 |     0.0064 |    0.0071 |              3 |                       2 |                   nan |
-| FX -> CPI           | Pre-ZIRP (1987-1999)       |   -0.0081 |   -0.0068 |   -0.0042 |    -0.0037 |    -0.0038 |   -0.0095 |              0 |                       0 |                     5 |
-| FX -> CPI           | ZIRP/Deflation (1999-2013) |    0.0143 |    0.0075 |   -0.0032 |    -0.0034 |    -0.0038 |    0.0143 |              1 |                       7 |                     3 |
-| FX -> CPI           | QQE-to-present (2013-2026) |    0.0083 |    0.0137 |    0.0182 |     0.0194 |     0.0195 |    0.0197 |              9 |                       6 |                   nan |
-| JGB10Y -> CPI       | Pre-ZIRP (1987-1999)       |    0.0007 |    0.0018 |    0.0023 |     0.0018 |     0.002  |    0.0023 |              6 |                       3 |                   nan |
-| JGB10Y -> CPI       | ZIRP/Deflation (1999-2013) |    0.0005 |    0.0036 |    0.0044 |     0.0037 |     0.0037 |    0.005  |              5 |                       3 |                   nan |
-| JGB10Y -> CPI       | QQE-to-present (2013-2026) |    0.0035 |    0.0081 |    0.0091 |     0.0091 |     0.0091 |    0.0091 |             11 |                       4 |                   nan |
-| Import Price -> CPI | Pre-ZIRP (1987-1999)       |    0.0076 |   -0.0042 |    0.0015 |    -0.0009 |    -0.0006 |   -0.0134 |              2 |                       2 |                     1 |
-| Import Price -> CPI | ZIRP/Deflation (1999-2013) |    0.0131 |    0.0197 |    0.0186 |     0.0184 |     0.0184 |    0.0197 |              3 |                       2 |                   nan |
-| Import Price -> CPI | QQE-to-present (2013-2026) |    0.016  |    0.0097 |    0.0099 |     0.009  |     0.0089 |    0.016  |              1 |                       0 |                   nan |
-| Oil -> Import Price | Pre-ZIRP (1987-1999)       |    0.2788 |    0.8372 |    0.9779 |     0.7628 |     0.7792 |    0.9896 |              5 |                       3 |                   nan |
-| Oil -> Import Price | ZIRP/Deflation (1999-2013) |    0.7536 |    0.9606 |    0.9602 |     0.9295 |     0.9275 |    1.0059 |              5 |                       2 |                   nan |
-| Oil -> Import Price | QQE-to-present (2013-2026) |    0.6593 |    1.3761 |    1.0136 |     1.0577 |     1.0434 |    1.3761 |              3 |                       2 |                   nan |
-| FX -> Import Price  | Pre-ZIRP (1987-1999)       |    0.8823 |    0.8837 |    0.9451 |     0.9468 |     0.9496 |    0.981  |              2 |                       1 |                   nan |
-| FX -> Import Price  | ZIRP/Deflation (1999-2013) |    1.1091 |    0.8915 |    0.2623 |     0.2802 |     0.2583 |    1.1299 |              0 |                       0 |                     4 |
-| FX -> Import Price  | QQE-to-present (2013-2026) |    1.0915 |    0.67   |    0.3492 |     0.4385 |     0.4641 |    1.2356 |              0 |                       0 |                     4 |
+| Pass-through pair        | Regime                     |  Month 1 |  Month 3 |  Month 6 |  Month 12 |  Month 24 |  Peak pass-through |   Peak horizon |   Months to 90%|   Half-life from peak |
+|:---------------------|:---------------------------|---------:|---------:|----------:|-----------:|-----------:|----------:|-------:|--------:|--------:|
+| Oil -> CPI          | Pre-ZIRP (1987-1999)       |   0.002  |   0.0087 |    0.0217 |     0.0133 |     0.0153 |    0.022  |      7 |       5 |     nan |
+| Oil -> CPI          | ZIRP/Deflation (1999-2013) |   0.0058 |   0.0115 |    0.0122 |     0.0116 |     0.0116 |    0.0128 |      5 |       3 |     nan |
+| Oil -> CPI          | QQE-to-present (2013-2026) |   0.0042 |   0.0071 |    0.0061 |     0.0064 |     0.0064 |    0.0071 |      3 |       2 |     nan |
+| FX -> CPI           | Pre-ZIRP (1987-1999)       |  -0.0081 |  -0.0068 |   -0.0042 |    -0.0037 |    -0.0038 |   -0.0095 |      0 |       0 |       5 |
+| FX -> CPI           | ZIRP/Deflation (1999-2013) |   0.0143 |   0.0075 |   -0.0032 |    -0.0034 |    -0.0038 |    0.0143 |      1 |       7 |       3 |
+| FX -> CPI           | QQE-to-present (2013-2026) |   0.0083 |   0.0137 |    0.0182 |     0.0194 |     0.0195 |    0.0197 |      9 |       6 |     nan |
+| JGB10Y -> CPI       | Pre-ZIRP (1987-1999)       |   0.0007 |   0.0018 |    0.0023 |     0.0018 |     0.002  |    0.0023 |      6 |       3 |     nan |
+| JGB10Y -> CPI       | ZIRP/Deflation (1999-2013) |   0.0005 |   0.0036 |    0.0044 |     0.0037 |     0.0037 |    0.005  |      5 |       3 |     nan |
+| JGB10Y -> CPI       | QQE-to-present (2013-2026) |   0.0035 |   0.0081 |    0.0091 |     0.0091 |     0.0091 |    0.0091 |     11 |       4 |     nan |
+| Import Price -> CPI | Pre-ZIRP (1987-1999)       |   0.0076 |  -0.0042 |    0.0015 |    -0.0009 |    -0.0006 |   -0.0134 |      2 |       2 |       1 |
+| Import Price -> CPI | ZIRP/Deflation (1999-2013) |   0.0131 |   0.0197 |    0.0186 |     0.0184 |     0.0184 |    0.0197 |      3 |       2 |     nan |
+| Import Price -> CPI | QQE-to-present (2013-2026) |   0.016  |   0.0097 |    0.0099 |     0.009  |     0.0089 |    0.016  |      1 |       0 |     nan |
+| Oil -> Import Price | Pre-ZIRP (1987-1999)       |   0.2788 |   0.8372 |    0.9779 |     0.7628 |     0.7792 |    0.9896 |      5 |       3 |     nan |
+| Oil -> Import Price | ZIRP/Deflation (1999-2013) |   0.7536 |   0.9606 |    0.9602 |     0.9295 |     0.9275 |    1.0059 |      5 |       2 |     nan |
+| Oil -> Import Price | QQE-to-present (2013-2026) |   0.6593 |   1.3761 |    1.0136 |     1.0577 |     1.0434 |    1.3761 |      3 |       2 |     nan |
+| FX -> Import Price  | Pre-ZIRP (1987-1999)       |   0.8823 |   0.8837 |    0.9451 |     0.9468 |     0.9496 |    0.981  |      2 |       1 |     nan |
+| FX -> Import Price  | ZIRP/Deflation (1999-2013) |   1.1091 |   0.8915 |    0.2623 |     0.2802 |     0.2583 |    1.1299 |      0 |       0 |       4 |
+| FX -> Import Price  | QQE-to-present (2013-2026) |   1.0915 |   0.67   |    0.3492 |     0.4385 |     0.4641 |    1.2356 |      0 |       0 |       4 |
 
-*Note: peak_PT indicates the maximum cumulaive pass-through observed, peak-horizon indicates the month when peak_PT was achieved, month_to-90_pct indicates how many months in took to reach 90% of the 24-month cumulative pass-through.
+*Note: Peak pass-through indicates the maximum cumulaive pass-through observed, Peak horizon indicates the month when peak pass-through was achieved, Months to 90% indicates how many months in took to reach 90% of the 24-month cumulative pass-through.
 
 ### 5. Conclusion
 
