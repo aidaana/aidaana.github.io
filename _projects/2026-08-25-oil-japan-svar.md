@@ -18,11 +18,11 @@ category: data-analysis
   /* Automatically add an empty line gap below all markdown tables */
   table { 
     display: table !important;           /* Overrides theme structural box locks */
-    max-width: 75% !important;           /* Adjusts target size layout footprint */
+    max-width: 90% !important;           /* Adjusts target size layout footprint */
     margin-left: auto !important;        /* Computes centered alignment blocks */
     margin-right: auto !important;       /* Computes centered alignment blocks */
     margin-bottom: 35px !important;      /* Keeps the empty line gap below the table */
-    font-size: 0.9em !important;
+    font-size: 0.8em !important;
   }
   
    /* Unbolds the top row headers */
