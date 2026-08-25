@@ -334,23 +334,27 @@ Figures 1-5 plot raw-level time series of the model's five variables.
 
 <div align="center">
 <img src="/assets/images/figures-oil/fig_jgb.png" width="700">
-<p> <p>
+<p style="text-align: center !important;"> </p>
+</div>
+<br>
 
 <div align="center">
 <img src="/assets/images/figures-oil/fig_yen.png" width="700">
-<p> <p>
+<p style="text-align: center !important;"> </p>
 </div>
+<br>
 
 <div align="center">
 <img src="/assets/images/figures-oil/fig_crude_petroleum.png" width="700">
-<p> <p>
+<p style="text-align: center !important;"> </p>
 </div>
+<br>
 
 <div align="center">
 <img src="/assets/images/figures-oil//fig_cpi.png" width="800">
-<p> <p>
+<p style="text-align: center !important;"> </p>
 </div>
-
+<br>
 
 #### 3.2 Model
 
@@ -498,13 +502,15 @@ Table 6 reports cumulative pass-through rates and convergence statistics for the
 
 <div align="center">
 <img src="/assets/images/figures-oil/fig_regime_pass_through_cpi.png" width="800">
-<p> <p>
+<p style="text-align: center !important;"> </p>
 </div>
+<br>
 
 <div align="center">
 <img src="/assets/images/figures-oil/fig_regime_pass_through_import_prices.png" width="800">
-<p> <p>
+<p style="text-align: center !important;"> </p>
 </div>
+<br>
 
 **FX → CPI.** The long-run FX pass-through into CPI moves from −0.38% (Pre-ZIRP) to −0.38% (ZIRP/Deflation, effectively unchanged) to +1.95% (QQE-to-present) — a change in sign and an increase in magnitude relative to the two earlier regimes. Yen depreciation had a negligible-to-negative association with CPI prior to 2013, but has become a driver of an increase in consumer prices in the QQE-to-present era. Additionally, in QQE-to-present, FX → CPI peaks later (horizon 9 vs. horizon 0–1), illustrating a more gradual and larger transmission process in the recent regime.
 
