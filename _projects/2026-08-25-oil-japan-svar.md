@@ -292,10 +292,10 @@ The benchmark five-model VAR model is estimated on monthly time series spanning 
 
 | Variable | Notes | Source | Original sample Period |
 | :--- | :---: | :---: | :---: | 
-| Oil price (Brent) | Europe Brent Spot Price FOB (USD/barrel), monthly average | [U.S. Energy Information Administration (EIA)](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=M) | May 1987 – Jul 2026 |
-| Japan's 10-year Government Bond Yields | Monthly average % | [Ministry of Finance, Japan](https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/index.htm) | Jul 1986 – Jul 2026 |
-| Exchange rate (USD/JPY) | Nominal rate, monthly average of daily rates | [OECD via FRED](https://fred.stlouisfed.org/series/CCUSMA02JPM618N) | Jan 1957 – Jul 2026 |
-| Crude petroleum import price index | Corporate Goods Price Index (2020 base), Import Price Index, yen basis, Crude petroleum (commodity) | [Bank of Japan (BOJ)](https://www.stat-search.boj.or.jp/index_en.html) | Jan 1980 – Jul 2026 |
+| Oil price | Europe Brent Spot Price FOB (USD/barrel), monthly average | [U.S. Energy Information Administration (EIA)](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=M) | May 1987 – Jul 2026 |
+| Japan's 10-year Government Bond Yields | Monthly average of daily yields | [Ministry of Finance, Japan](https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/index.htm) | Jul 1986 – Jul 2026 |
+| Exchange rate (USD/JPY) | Monthly average of daily nominal rates | [OECD via FRED](https://fred.stlouisfed.org/series/CCUSMA02JPM618N) | Jan 1957 – Jul 2026 |
+| Crude petroleum import price index | Corporate Goods Price Index (2020 base), Import Price Index (yen basis), Crude petroleum (commodity) | [Bank of Japan (BOJ)](https://www.stat-search.boj.or.jp/index_en.html) | Jan 1980 – Jul 2026 |
 | CPI, all items (headline CPI) | Monthly index (2020 base) | [Statistics Bureau of Japan](https://www.e-stat.go.jp/en/stat-search/files?page=1&toukei=00200573&tstat=000001150147&metadata=1&data=1) | Jan 1970 – Jul 2026 |
 
 The common time period across these time-series is from June 1987 to July 2026, which I will use in the benchmark model.
@@ -469,10 +469,7 @@ The following are the main results and observations from estimating benchmark fi
 
 **Effects on CPI.** In the CPI equation, both the first lag of the exchange rate ($\hat\gamma=0.0132$, $p=0.044$) and Brent ($\hat\gamma=0.0026$, $p=0.059$, marginal) enter in positive but small coefficient values. The crude petroleum import price index itself does not enter the CPI equation significantly at any lag, suggesting that oil imports constitute only a small part of the broad basket of goods and services tracked by CPI.
 
-**Residual Correlation Structure**
-
-The residual variance-covariance matrix $\hat\Sigma_u$ reveals the contemporaneous linkages that motivate the Cholesky ordering. The strongest off-diagonal relationship is between the exchange rate and the crude petroleum import price index (implied correlation $\approx 0.60$), consistent with the near-mechanical link between yen movements and the yen-denominated cost of imported crude oil within the same month. The JGB yield and the exchange rate also show a meaningful contemporaneous correlation ($\approx 0.17$), confirming bond yield movements and exchange rate movements co-move within the same period. Contemporaneous correlation between Brent price and crude petroleum import price is only 0.06, suggesting that immediate monthly unexpected shocks in global markets do not immediately show up in import price index due to shipment contracts that were alredy priced. CPI's residual correlations with the other variables are small, consistent with its role as the most contomporaneously endogenous, slow-moving variable in the system, whose response to shocks is expected to build up gradually over subsequent months rather than within the same period.
-
+**Residual Correlation Structure.** The residual variance-covariance matrix $\hat\Sigma_u$ reveals the contemporaneous linkages that motivate the Cholesky ordering. The strongest off-diagonal relationship is between the exchange rate and the crude petroleum import price index (implied correlation $\approx 0.60$), consistent with the near-mechanical link between yen movements and the yen-denominated cost of imported crude oil within the same month. The JGB yield and the exchange rate also show a meaningful contemporaneous correlation ($\approx 0.17$), confirming bond yield movements and exchange rate movements co-move within the same period. Contemporaneous correlation between Brent price and crude petroleum import price is only 0.06, suggesting that immediate monthly unexpected shocks in global markets do not immediately show up in import price index due to shipment contracts that were alredy priced. CPI's residual correlations with the other variables are small, consistent with its role as the most contomporaneously endogenous, slow-moving variable in the system, whose response to shocks is expected to build up gradually over subsequent months rather than within the same period.
 
 #### 4.2 Oil, exchange rate, and monetary policy pass-through
 
@@ -486,14 +483,14 @@ These results indicate that Japan's crude petroleum import prices absorb oil and
 
 <div style="text-align: center;">Table 5. Pass-through rates over 1, 3, 6, 12, 24 months </div>
 
-| Pass-through pair    |   Month_1 |   Month_3 |   Month_6 |   Month_12 |   Month_24 |Peak pass-through |   Peak_horizon |   Months_to_90pct|
-|:---------------------|----------:|----------:|----------:|-----------:|-----------:|------------:|---------------:|------------------------:|
-| Oil -> CPI           |    0.0047 |    0.0072 |    0.0087 |     0.008  |     0.008  |      0.009  |              5 |                       2 |     
-| FX -> CPI            |    0.0097 |    0.0137 |    0.0129 |     0.0131 |     0.013  |      0.0137 |              3 |                       2 |        
-| JGB10Y -> CPI        |    0.0006 |    0.0031 |    0.0032 |     0.0031 |     0.0031 |      0.0036 |              4 |                       3 |      
-| CrudePet -> CPI      |    0.0097 |    0.0089 |    0.0089 |     0.0085 |     0.0084 |      0.0097 |              1 |                       1 |      
-| Oil -> CrudePet      |    0.59   |    1.0721 |    0.9582 |     0.9417 |     0.9361 |      1.0721 |              3 |                       2 |   
-| FX -> CrudePet       |    1.0961 |    0.872  |    0.6105 |     0.6826 |     0.6816 |      1.0961 |              1 |                       0 |  
+| Pass-through pair    |   Month 1 |   Month 3 |   Month 6 |   Month 12 |   Month 24 |Peak pass-through |Peak horizon |   Months to 90%|
+|:---------------------|----------:|----------:|----------:|-----------:|-----------:|------------:|---------:|--------:|
+| Oil -> CPI           |    0.0047 |    0.0072 |    0.0087 |     0.008  |     0.008  |      0.009  |        5 |       2 |     
+| FX -> CPI            |    0.0097 |    0.0137 |    0.0129 |     0.0131 |     0.013  |      0.0137 |        3 |       2 |        
+| JGB10Y -> CPI        |    0.0006 |    0.0031 |    0.0032 |     0.0031 |     0.0031 |      0.0036 |        4 |       3 |      
+| CrudePet -> CPI      |    0.0097 |    0.0089 |    0.0089 |     0.0085 |     0.0084 |      0.0097 |        1 |       1 |      
+| Oil -> CrudePet      |    0.59   |    1.0721 |    0.9582 |     0.9417 |     0.9361 |      1.0721 |        3 |       2 |   
+| FX -> CrudePet       |    1.0961 |    0.872  |    0.6105 |     0.6826 |     0.6816 |      1.0961 |        1 |       0 |  
 
 
 #### 4.3 Pass-through: regime comparison
