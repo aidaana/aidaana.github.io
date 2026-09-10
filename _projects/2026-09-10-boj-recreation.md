@@ -43,7 +43,7 @@ category: data-analysis
 
 <table width="100%" style="border: none; border-collapse: collapse;">
 <tr style="border: none;">
-<td width="45%" valign="top" style="border: none; padding-right: 20px;">
+<td width="45%" valign="top" style="border: none; padding-right: 20px;" markdown="1">
 
 Recreation of Chart 33 in BOJ's [Outlook for Economic Activity and Prices (July 2026).](https://www.boj.or.jp/en/mopo/outlook/index.htm)
 
@@ -54,7 +54,7 @@ Time-series: Corporate Goods Price Index (2020 base), Producer Price Index
 
 Product groups were combined as follows:
 
-<div style="font-size: 0.85em;">
+<div style="font-size: 0.85em;" markdown="1">
 
 **Petroleum and coal products, nonferrous metals**: Petroleum and coal products, Nonferrous metals
 
@@ -69,7 +69,7 @@ Product groups were combined as follows:
 </div>
 
 </td>
-<td width="55%" valign="top" style="border: none;">
+<td width="55%" valign="top" style="border: none;" markdown="1">
 
 <div align="center">
 <img src="/assets/images/figures-recreation/fig_ppi.png" width="600">
@@ -85,7 +85,7 @@ Product groups were combined as follows:
 
 <table width="100%" style="border: none; border-collapse: collapse;">
 <tr style="border: none;">
-<td width="45%" valign="top" style="border: none; padding-right: 20px;">
+<td width="45%" valign="top" style="border: none; padding-right: 20px;" markdown="1">
 
 Recreation of Chart 45 in BOJ's [Outlook for Economic Activity and Prices (July 2026).](https://www.boj.or.jp/en/mopo/outlook/index.htm)
 
@@ -95,10 +95,8 @@ Time-series: Corporate Goods Price Index (2020 base), Import price index, Yen ba
 **Notes:**
 The change driven by commodity prices is calculated as the year-on-year change in import price index on a contract currency, while the change driven by exchange rates is calculated as the difference between the year-on-year changes in the import price index on a yen basis and on a contract currency basis.
 
-</div>
-
 </td>
-<td width="55%" valign="top" style="border: none;">
+<td width="55%" valign="top" style="border: none;" markdown="1">
 
 <div align="center">
 <img src="/assets/images/figures-recreation/fig_import_prices.png" width="600">
