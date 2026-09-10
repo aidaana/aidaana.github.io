@@ -56,13 +56,13 @@ Product groups were combined as follows:
 
 <div style="font-size: 0.85em;">
 
-**Petroleum and coal products, nonferrous metals**: <span style="background-color:#4A7EBB; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Petroleum and coal products</span>, <span style="background-color:#D9822B; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Nonferrous metals</span>
+**Petroleum and coal products, nonferrous metals**: Petroleum and coal products, Nonferrous metals
 
-**Materials (chemicals, plastic products, metals, etc.)**: <span style="background-color:#4A7EBB; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Chemicals and related products</span>, <span style="background-color:#D9822B; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Plastic products</span>, <span style="background-color:#5B9E5B; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Ceramic, stone and clay products</span>, <span style="background-color:#B34D6E; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Iron and steel</span>, <span style="background-color:#8B5FA3; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Metal products</span>, <span style="background-color:#4A7EBB; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Pulp, paper and related products</span>, <span style="background-color:#D9822B; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Lumber and wood products</span>
+**Materials (chemicals, plastic products, metals, etc.)**: Chemicals and related products, Plastic products, Ceramic, stone and clay products, Iron and steel, Metal products, Pulp, paper and related products, Lumber and wood products
 
-**Machinery**: <span style="background-color:#4A7EBB; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">General purpose machinery</span>, <span style="background-color:#D9822B; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Production machinery</span>, <span style="background-color:#5B9E5B; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Business oriented machinery</span>, <span style="background-color:#B34D6E; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Electrical machinery and equipment</span>, <span style="background-color:#8B5FA3; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Transportation equipment</span>, <span style="background-color:#4A7EBB; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Information and communications equipment</span>
+**Machinery**: General purpose machinery, Production machinery, Business oriented machinery, Electrical machinery and equipment, Transportation equipment, Information and communications equipment
 
-**Beverages and foods, etc.**: <span style="background-color:#4A7EBB; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Beverages and foods</span>, <span style="background-color:#D9822B; color:white; padding:1px 8px; border-radius:6px; font-weight:600;">Agriculture, forestry and fishery products</span>
+**Beverages and foods, etc.**: Beverages and foods, Agriculture, forestry and fishery products
 
 **Other**: everything else
 
