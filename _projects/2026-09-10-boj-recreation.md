@@ -18,7 +18,7 @@ category: data-analysis
   /* Automatically add an empty line gap below all markdown tables */
   table { 
     display: table !important;           /* Overrides theme structural box locks */
-    max-width: 75% !important;           /* Adjusts target size layout footprint */
+    max-width: 95% !important;           /* Adjusts target size layout footprint */
     margin-left: auto !important;        /* Computes centered alignment blocks */
     margin-right: auto !important;       /* Computes centered alignment blocks */
     margin-bottom: 35px !important;      /* Keeps the empty line gap below the table */
