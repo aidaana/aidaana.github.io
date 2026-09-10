@@ -18,7 +18,7 @@ category: data-analysis
   /* Automatically add an empty line gap below all markdown tables */
   table { 
     display: table !important;           /* Overrides theme structural box locks */
-    max-width: 95% !important;           /* Adjusts target size layout footprint */
+    max-width: 98% !important;           /* Adjusts target size layout footprint */
     margin-left: auto !important;        /* Computes centered alignment blocks */
     margin-right: auto !important;       /* Computes centered alignment blocks */
     margin-bottom: 35px !important;      /* Keeps the empty line gap below the table */
@@ -50,11 +50,7 @@ Recreation of Chart 33 in BOJ's [Outlook for Economic Activity and Prices (July 
 Data source: [BOJ Time-Series Data Search](https://www.stat-search.boj.or.jp/index_en.html)
 Time-series: Corporate Goods Price Index (2020 base), Producer Price Index
 
-**Notes:**
-
-Product groups were combined as follows:
-
-<div style="font-size: 0.85em;" markdown="1">
+**Notes:** Product groups were combined as follows:
 
 **Petroleum and coal products, nonferrous metals**: Petroleum and coal products, Nonferrous metals
 
