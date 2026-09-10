@@ -43,7 +43,7 @@ category: data-analysis
 
 <table width="100%" style="border: none; border-collapse: collapse;">
 <tr style="border: none;">
-<td width="45%" valign="top" style="border: none; padding-right: 20px;" markdown="1">
+<td width="80%" valign="top" style="border: none; padding-right: 20px;" markdown="1">
 
 Recreation of Chart 33 in BOJ's [Outlook for Economic Activity and Prices (July 2026).](https://www.boj.or.jp/en/mopo/outlook/index.htm)
 
@@ -85,7 +85,7 @@ Product groups were combined as follows:
 
 <table width="100%" style="border: none; border-collapse: collapse;">
 <tr style="border: none;">
-<td width="45%" valign="top" style="border: none; padding-right: 20px;" markdown="1">
+<td width="80%" valign="top" style="border: none; padding-right: 20px;" markdown="1">
 
 Recreation of Chart 45 in BOJ's [Outlook for Economic Activity and Prices (July 2026).](https://www.boj.or.jp/en/mopo/outlook/index.htm)
 
