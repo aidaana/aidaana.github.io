@@ -47,7 +47,7 @@ category: study-aids
  
 ### Overview
  
-The Solow growth model, a starting point in many macroeconomic modelling courses, was developed by Robert Solow and Trevor Swan in 1956. Its centralconclusion is that technological (or productivity) growth, not capital accumulation, is the only driver of long-term economic growth per person.
+The Solow growth model, a starting point in many macroeconomic modeling courses, was developed by Robert Solow and Trevor Swan in 1956. Its central conclusion is that technological (or productivity) growth, not capital accumulation, is the only driver of long-term economic growth per person.
 
 Althouh the model is simplistic in its setup and assumptions (most notably a fixed savings rate rather than one derived from household optimization), it still remains a foundational framework for analyzing long-term growth or comparing and contrasting with other more realistic models.
 
@@ -59,9 +59,9 @@ Assumptions:
 - Population/labor $L_t$ grows at a constant exogenous rate $n$: $\dot{L}_t/L_t = n$.
 - Technology $A_t$ grows at a constant exogenous rate $g$ (labor-augmenting): $\dot{A}_t/A_t = g$.
 - Output is produced with capital K, labor L, and technology A.
-- A constant fraction $s \in (0,1)$ of output is saved and invested** every period; the rest is consumed.
+- A constant fraction $s \in (0,1)$ of output is saved and invested every period, while the rest is consumed.
 - Capital depreciates at a constant rate $\delta$.
-- Closed economy, single good: the same good can be consumed or invested.
+- Closed economy with single good.
 - Markets  are perfectly competitive.
 
 Production function is
@@ -72,13 +72,13 @@ and the related assumptions are:
  
 - Constant returns to scale: $F(\lambda K, \lambda AL) = \lambda F(K,AL)$ for any $\lambda>0$.
 - Positive and diminishing marginal products in each argument: $F_K > 0, F_{KK} < 0, \qquad F_{AL} > 0, \quad F_{AL,AL} < 0$
-- Inada conditions: $\lim_{K\to 0} F_K = \infty, \lim_{K\to \infty} F_K = 0$
+- Inada conditions: $\lim_{K\to 0} F_K = \infty$ and $\lim_{K\to \infty} F_K = 0$
 
 The standard production function is of Cobb-Douglas form:
  
 $$Y_t = K_t^{\alpha}(A_tL_t)^{1-\alpha}, \qquad 0<\alpha<1$$
  
-It can be rewritten in intensive form, which expresses output per unit of effective labor, using $\hat{k}_t \equiv K_t/(A_tL_t)$:
+Production function can be rewritten in intensive form, which expresses output per unit of effective labor, defining capital per effective worker as $\hat{k}_t \equiv K_t/(A_tL_t)$:
  
 $$\hat{y}_t \equiv \frac{Y_t}{A_tL_t} = \frac{K_t^{\alpha}}{(A_tL_t)^{\alpha}} \equiv  f(\hat{k}_t) = \hat{k}_t^{\alpha}$$
  
@@ -86,7 +86,7 @@ Capital stock evolves according to the following identity:
  
 $$\dot{K}_t = sY_t - \delta K_t$$
  
-i.e., capital stock grows with investment (a constant share $s$ of output) and gets depleted at a constant rate of depreciation $\delta$.
+That is, capital stock grows with investment (a constant share $s$ of output) and gets depleted at a constant rate of depreciation $\delta$.
  
 ### Dynamics of capital
 
@@ -98,7 +98,7 @@ Split the second term into two separate fractions:
 
 $$\dot{\hat{k}}_t = \frac{\dot{K}_t}{A_tL_t} - \frac{K_t}{A_tL_t}\cdot\frac{\dot{L}_t}{L_t} - \frac{K_t}{A_tL_t}\cdot\frac{\dot{A}_t}{A_t}$$
 
-Now substituting in $K_t/(A_tL_t) = \hat{k}_t$ (by definition), $\dot{L}_t/L_t = n$ (exogenous population growth), $\dot{A}_t/A_t = g$ (exogenous technology growth), and \dot{K}_t = sY_t - \delta K_t$ (the capital accumulation identity), gives:
+Now substituting in $K_t/(A_tL_t) = \hat{k}_t$ (by definition), $\dot{L}_t/L_t = n$ (exogenous population growth), $\dot{A}_t/A_t = g$ (exogenous technology growth), and $\dot{K}_t = sY_t - \delta K_t$ (the capital accumulation identity), gives:
 
 $$\dot{\hat{k}}_t = \frac{sY_t-\delta K_t}{A_tL_t} - \hat{k}_t n - \hat{k}_t g$$
 
@@ -106,7 +106,7 @@ Since $Y_t/(A_tL_t) = \hat{y}_t = f(\hat{k}_t)$, the above expression equals to:
 
 $$\dot{\hat{k}}_t = sf(\hat{k}_t) - \delta\hat{k}_t - n\hat{k}_t - g\hat{k}_t$$
 
-Finally, grouping the last three terms together gives the compact form:
+Finally, grouping the last three terms together leads to the compact form:
  
 $$\boxed{\dot{\hat{k}}_t = s f(\hat{k}_t) - (n+g+\delta)\hat{k}_t}$$
  
@@ -126,7 +126,7 @@ Thus, steady-state output and consumption per effective worker are:
  
 $$\hat{y}^* = (\hat{k}^*)^{\alpha} = \left(\frac{s}{n+g+\delta}\right)^{\frac{\alpha}{1-\alpha}}, \qquad \hat{c}^* = (1-s)\hat{y}^*$$
  
-$\hat{k}^*$ itself is constant, but  output and consumption per worker (not per effective worker) are $y_t = A_t\hat{y}^*$ and $c_t = A_t\hat{c}^*$, which grow forever at rate $g$ once the economy is at steady state. This is the model's central result: long-run growth comes only from technological progress, not from capital accumulation or the savings rate.
+$\hat{k}^* $ itself is constant, but  output and consumption per worker (not per effective worker) are $y_t = A_t\hat{y}^* $ and $c_t = A_t\hat{c}^* $, which grow forever at rate $g$ once the economy is at steady state. This is the model's central result: long-run growth comes only from technological progress, not from capital accumulation or the savings rate.
  
 ### Summary of Key Equations
  
