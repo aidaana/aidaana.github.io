@@ -1,5 +1,5 @@
 ---
-title: "Interactive Solow Growth Model"
+title: "Interactive Solow growth model"
 subtitle: ""
 layout: post
 category: study-aids
@@ -140,22 +140,22 @@ $\hat{k}^* $ itself is constant, but  output and consumption per worker (not per
 
 ### Interactive Model
 
-<div style="max-width: 1150px; margin: 0 auto; font-family: system-ui, sans-serif; height: 95vh; display:flex; flex-direction:column;">
+<div style="max-width: 1150px; margin: 0 auto; font-family: system-ui, sans-serif;">
 
-  <div style="display:grid; grid-template-columns: 3fr minmax(260px, 2fr); gap: 16px; flex:1; min-height:0;">
+  <div style="display:grid; grid-template-columns: 3.5fr 2fr; gap: 16px; align-items:start;">
 
-    <div style="display:flex; flex-direction:column; min-height:0;">
-      <div style="display:grid; grid-template-columns: 170px 1fr; gap: 8px; align-items:center; flex:1; min-height:0;">
+    <div style="display:flex; flex-direction:column;">
+      <div style="display:grid; grid-template-columns: 170px 1fr; gap: 8px; align-items:center;">
         <div style="font-size: 14px; line-height: 2.1;">
           <div><span style="display:inline-block; width:14px; height:3px; background:#276fff; vertical-align:middle;"></span> <i>s&middot;</i><span style="position:relative; display:inline-block;"><i>k</i><span style="position:absolute; top:-6px; left:50%; transform:translateX(-50%); font-size:12px;">^</span></span><sup><i>&alpha;</i></sup> <span style="color:#777; margin-left:8px;">(actual investment)</span></div>
           <div><span style="display:inline-block; width:14px; height:3px; background:#ff5b1f; vertical-align:middle;"  ></span> <i>(&delta;+n+g)&middot;</i><span style="position:relative; display:inline-block;"><i>k</i><span style="position:absolute; top:-6px; left:50%; transform:translateX(-50%); font-size:12px;">^</span></span> <span style="color:#777; margin-left:8px;">(break-even)</span></div>
           <div><span style="display:inline-block; width:9px; height:9px; border-radius:50%; background:#14232E; vertical-align:middle;"  ></span> <span style="margin-left:2px;">steady state</span> <span style="position:relative; display:inline-block;"><i>k</i><span style="position:absolute; top:-6px; left:50%; transform:translateX(-50%); font-size:12px;">^</span></span>*</div>
           <div><span style="display:inline-block; width:9px; height:9px; background:#C0392B; vertical-align:middle; transform:rotate(45deg);"  ></span> <span style="margin-left:2px;">current</span> <span style="position:relative; display:inline-block;"><i>k</i><span style="position:absolute; top:-6px; left:50%; transform:translateX(-50%); font-size:12px;">^</span></span></div>
         </div>
-        <div id="solow-diagram" style="width:100%; height:100%; min-height:180px;"></div>
+        <div id="solow-diagram" style="width:100%; height:320px;"></div>
       </div>
 
-      <div style="display:grid; grid-template-columns: 170px 1fr; gap: 8px; flex:1.3; min-height:0; margin-top:8px;">
+      <div style="display:grid; grid-template-columns: 170px 1fr; gap: 8px; margin-top:8px;">
         <div style="display:flex; flex-direction:column;">
           <div style="flex:1; display:flex; align-items:center; font-size: 14px; line-height: 1.9;">
             <div><span style="display:inline-block; width:14px; height:3px; background:#276fff; vertical-align:middle;"></span> <span style="position:relative; display:inline-block;"><i>k</i><span style="position:absolute; top:-6px; left:50%; transform:translateX(-50%); font-size:12px;">^</span></span><sub><i>t</i></sub> <span style="color:#777; margin-left:8px;">(capital per effective worker)</span></div>
@@ -167,38 +167,36 @@ $\hat{k}^* $ itself is constant, but  output and consumption per worker (not per
             </div>
           </div>
         </div>
-        <div id="time-paths" style="width:100%; height:100%; min-height:220px;"></div>
+        <div id="time-paths" style="width:100%; height:400px;"></div>
       </div>
     </div>
 
-    <div style="overflow-y:auto; padding-right:4px; min-width:0; height:100%; display:flex; flex-direction:column; justify-content:center;">
-      <div id="readout" style="margin-bottom: 12px; font-size: 13px; color:#333; line-height:1.5;"></div>
+    <div style="min-width:0;">
+      <div id="readout" style="margin-bottom: 16px; font-size: 13px; color:#333; line-height:1.5;"></div>
 
-      <div style="margin-top: 32px;">
-        <div style="margin-bottom:10px;">
-          <label style="font-size:13px;">Savings rate, $s$ = <span id="s-val"></span> <span style="color:#777;">(share of output invested)</span></label>
-          <input type="range" id="s" min="0.05" max="0.5" step="0.01" value="0.30" style="width:100%">
-        </div>
+      <div style="margin-bottom:10px;">
+        <label style="font-size:13px;">Savings rate, $s$ = <span id="s-val"></span> <span style="color:#777;">(share of output invested)</span></label>
+        <input type="range" id="s" min="0.05" max="0.5" step="0.01" value="0.30" style="width:100%">
+      </div>
 
-        <div style="margin-bottom:10px;">
-          <label style="font-size:13px;">Capital share, $\alpha$ = <span id="alpha-val"></span> <span style="color:#777;">(output elasticity of capital)</span></label>
-          <input type="range" id="alpha" min="0.2" max="0.5" step="0.01" value="0.33" style="width:100%">
-        </div>
+      <div style="margin-bottom:10px;">
+        <label style="font-size:13px;">Capital share, $\alpha$ = <span id="alpha-val"></span> <span style="color:#777;">(output elasticity of capital)</span></label>
+        <input type="range" id="alpha" min="0.2" max="0.5" step="0.01" value="0.33" style="width:100%">
+      </div>
 
-        <div style="margin-bottom:10px;">
-          <label style="font-size:13px;">Depreciation, $\delta$ = <span id="delta-val"></span> <span style="color:#777;">(capital lost per period)</span></label>
-          <input type="range" id="delta" min="0.01" max="0.10" step="0.005" value="0.05" style="width:100%">
-        </div>
+      <div style="margin-bottom:10px;">
+        <label style="font-size:13px;">Depreciation, $\delta$ = <span id="delta-val"></span> <span style="color:#777;">(capital lost per period)</span></label>
+        <input type="range" id="delta" min="0.01" max="0.10" step="0.005" value="0.05" style="width:100%">
+      </div>
 
-        <div style="margin-bottom:10px;">
-          <label style="font-size:13px;">Population growth, $n$ = <span id="n-val"></span> <span style="color:#777;">(labor force growth rate)</span></label>
-          <input type="range" id="n" min="0" max="0.05" step="0.002" value="0.01" style="width:100%">
-        </div>
+      <div style="margin-bottom:10px;">
+        <label style="font-size:13px;">Population growth, $n$ = <span id="n-val"></span> <span style="color:#777;">(labor force growth rate)</span></label>
+        <input type="range" id="n" min="0" max="0.05" step="0.002" value="0.01" style="width:100%">
+      </div>
 
-        <div style="margin-bottom:10px;">
-          <label style="font-size:13px;">Tech growth, $g$ = <span id="g-val"></span> <span style="color:#777;">(labor-augmenting tech growth)</span></label>
-          <input type="range" id="g" min="0" max="0.05" step="0.002" value="0.02" style="width:100%">
-        </div>
+      <div style="margin-bottom:10px;">
+        <label style="font-size:13px;">Tech growth, $g$ = <span id="g-val"></span> <span style="color:#777;">(labor-augmenting tech growth)</span></label>
+        <input type="range" id="g" min="0" max="0.05" step="0.002" value="0.02" style="width:100%">
       </div>
     </div>
 
@@ -288,8 +286,6 @@ window.MathJax = { tex: { inlineMath: [['$', '$']] }, svg: { fontCache: 'global'
     document.getElementById('g-val').textContent = p.g.toFixed(3);
   }
 
-  // x-axis range now grows dynamically to always show k* with headroom,
-  // instead of a fixed [0,20] window that could clip the intersection.
   function buildDiagramTraces(p) {
     const kStar = Math.pow(p.s / (p.delta + p.n + p.g), 1 / (1 - p.alpha));
     const kMax = Math.max(20, kStar * 1.3);
@@ -439,3 +435,4 @@ window.MathJax = { tex: { inlineMath: [['$', '$']] }, svg: { fontCache: 'global'
   }
 })();
 </script>
+
