@@ -140,22 +140,22 @@ $\hat{k}^* $ itself is constant, but  output and consumption per worker (not per
 
 ### Interactive Model
 
-<div style="max-width: 1150px; margin: 0 auto; font-family: system-ui, sans-serif;">
+<div style="max-width: 1100px; margin: 0 auto; font-family: system-ui, sans-serif;">
 
   <div style="display:grid; grid-template-columns: 3.5fr 2fr; gap: 16px; align-items:start;">
 
     <div style="display:flex; flex-direction:column;">
-      <div style="display:grid; grid-template-columns: 170px 1fr; gap: 8px; align-items:center;">
+      <div style="display:grid; grid-template-columns: 170px 1fr; gap: 24px; align-items:center;">
         <div style="font-size: 14px; line-height: 2.1;">
           <div><span style="display:inline-block; width:14px; height:3px; background:#276fff; vertical-align:middle;"></span> <i>s&middot;</i><span style="position:relative; display:inline-block;"><i>k</i><span style="position:absolute; top:-6px; left:50%; transform:translateX(-50%); font-size:10px;">^</span></span><sup><i>&alpha;</i></sup> <span style="color:#777; margin-left:8px;">(actual investment)</span></div>
           <div><span style="display:inline-block; width:14px; height:3px; background:#ff5b1f; vertical-align:middle;"  ></span> <i>(&delta;+n+g)&middot;</i><span style="position:relative; display:inline-block;"><i>k</i><span style="position:absolute; top:-6px; left:50%; transform:translateX(-50%); font-size:10px;">^</span></span> <span style="color:#777; margin-left:8px;">(break-even)</span></div>
           <div><span style="display:inline-block; width:9px; height:9px; border-radius:50%; background:#14232E; vertical-align:middle;"  ></span> <span style="margin-left:2px;">steady state</span> <span style="position:relative; display:inline-block;"><i>k</i><span style="position:absolute; top:-6px; left:50%; transform:translateX(-50%); font-size:10px;">^</span></span>*</div>
           <div><span style="display:inline-block; width:9px; height:9px; background:#C0392B; vertical-align:middle; transform:rotate(45deg);"  ></span> <span style="margin-left:2px;">current</span> <span style="position:relative; display:inline-block;"><i>k</i><span style="position:absolute; top:-6px; left:50%; transform:translateX(-50%); font-size:10px;">^</span></span></div>
         </div>
-        <div id="solow-diagram" style="width:100%; height:290px;"></div>
+        <div id="solow-diagram" style="width:100%; height:260px;"></div>
       </div>
 
-      <div style="display:grid; grid-template-columns: 170px 1fr; gap: 8px; margin-top:8px;">
+      <div style="display:grid; grid-template-columns: 170px 1fr; gap: 24px; margin-top:8px;">
         <div style="display:flex; flex-direction:column;">
           <div style="flex:1; display:flex; align-items:center; font-size: 14px; line-height: 1.9;">
             <div><span style="display:inline-block; width:14px; height:3px; background:#276fff; vertical-align:middle;"></span> <span style="position:relative; display:inline-block;"><i>k</i><span style="position:absolute; top:-6px; left:50%; transform:translateX(-50%); font-size:10px;">^</span></span><sub><i>t</i></sub> <span style="color:#777; margin-left:8px;">(capital per effective worker)</span></div>
@@ -167,7 +167,7 @@ $\hat{k}^* $ itself is constant, but  output and consumption per worker (not per
             </div>
           </div>
         </div>
-        <div id="time-paths" style="width:100%; height:400px;"></div>
+        <div id="time-paths" style="width:100%; height:360px;"></div>
       </div>
     </div>
 
@@ -175,33 +175,44 @@ $\hat{k}^* $ itself is constant, but  output and consumption per worker (not per
       <div id="readout" style="margin-bottom: 16px; font-size: 13px; color:#333; line-height:1.5;"></div>
 
       <div style="margin-bottom:10px;">
-        <label style="font-size:13px;">Savings rate, $s$ = <span id="s-val"></span> <span style="color:#777;">(share of output invested)</span></label>
-        <input type="range" id="s" min="0.05" max="0.5" step="0.01" value="0.30" style="width:100%">
+        <label style="font-size:12px;">Savings rate, $s$ = <span id="s-val"></span> <span style="color:#777;"> </span></label>
+        <input type="range" id="s" min="0.05" max="0.5" step="0.01" value="0.30">
       </div>
 
       <div style="margin-bottom:10px;">
-        <label style="font-size:13px;">Capital share, $\alpha$ = <span id="alpha-val"></span> <span style="color:#777;">(output elasticity of capital)</span></label>
-        <input type="range" id="alpha" min="0.2" max="0.5" step="0.01" value="0.33" style="width:100%">
+        <label style="font-size:12px;">Capital share, $\alpha$ = <span id="alpha-val"></span> <span style="color:#777;"> </span></label>
+        <input type="range" id="alpha" min="0.2" max="0.5" step="0.01" value="0.33">
       </div>
 
       <div style="margin-bottom:10px;">
-        <label style="font-size:13px;">Depreciation, $\delta$ = <span id="delta-val"></span> <span style="color:#777;">(capital lost per period)</span></label>
-        <input type="range" id="delta" min="0.01" max="0.10" step="0.005" value="0.05" style="width:100%">
+        <label style="font-size:12px;">Depreciation, $\delta$ = <span id="delta-val"></span> <span style="color:#777;"> </span></label>
+        <input type="range" id="delta" min="0.01" max="0.10" step="0.005" value="0.05">
       </div>
 
       <div style="margin-bottom:10px;">
-        <label style="font-size:13px;">Population growth, $n$ = <span id="n-val"></span> <span style="color:#777;">(labor force growth rate)</span></label>
-        <input type="range" id="n" min="0" max="0.05" step="0.002" value="0.01" style="width:100%">
+        <label style="font-size:12px;">Population growth, $n$ = <span id="n-val"></span> <span style="color:#777;"> </span></label>
+        <input type="range" id="n" min="0" max="0.05" step="0.002" value="0.01">
       </div>
 
       <div style="margin-bottom:10px;">
-        <label style="font-size:13px;">Tech growth, $g$ = <span id="g-val"></span> <span style="color:#777;">(labor-augmenting tech growth)</span></label>
-        <input type="range" id="g" min="0" max="0.05" step="0.002" value="0.02" style="width:100%">
+        <label style="font-size:12px;">Tech growth, $g$ = <span id="g-val"></span> <span style="color:#777;"> </span></label>
+        <input type="range" id="g" min="0" max="0.05" step="0.002" value="0.02">
       </div>
     </div>
 
   </div>
 </div>
+
+<style>
+  input[type="range"] {
+    display: block;
+    width: 90%;
+    max-width: 280px;
+    height: 14px;
+    accent-color: #276fff;
+    cursor: pointer;
+  }
+</style>
 
 <script>
 window.MathJax = { tex: { inlineMath: [['$', '$']] }, svg: { fontCache: 'global' } };
